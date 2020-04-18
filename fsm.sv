@@ -5,8 +5,7 @@ module fms
   input reg [4:0] shamt,           //Constant Value 
   output reg RegDst,               //Register Destination
   output reg ALUsrc,               //Surce of Data to ALU
-  output reg RWE,                  //Register Write Enable
-  output reg [2:0] AluOP  //ALU Operation
+  output reg RWE                 //Register Write Enable
 );
 
 //******************** STATES ****************************************
@@ -28,7 +27,7 @@ localparam [5:0] Add = 'b10_0000,
 //******************************************************************** 
 
 
-reg [2:0] state;
+reg [3:0] state;
 
 
 
