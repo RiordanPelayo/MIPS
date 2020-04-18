@@ -1,0 +1,32 @@
+# vsim -c -do "run -all;q -f" top_module 
+# Start time: 11:49:33 on Apr 04,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# //  Questa Sim-64
+# //  Version 10.4e win64 Apr  9 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading sv_std.std
+# Loading work.top_module(fast)
+# Loading work.tb_reg(fast)
+# run -all
+# +-------------------+
+# | Start simulation! |
+# +-------------------+
+# >> Write verification
+# Inmediate: xxxx
+# Inmediate: ff00
+# Inmediate: ff00
+# End time: 11:49:37 on Apr 04,2020, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

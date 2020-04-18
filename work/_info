@@ -1,0 +1,863 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/questasim64_10.4e/Verificacion/MIPS
+T_opt
+!s110 1586022574
+VH;CcFh_9g?3lT]CQ@I7c01
+04 10 4 work top_module fast 0
+=1-5c5f674cd7c2-5e88c8ae-11e-1568
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4e;61
+R0
+vA
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1586830235
+!i10b 1
+!s100 bB<P1j84R9_GV`_XZ@Rd>1
+Ic:KHnT21T5=9nUVABzS8]3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 A_sv_unit
+S1
+Z3 dc:/questasim64_10.4e/Verificacion/MIPS
+w1586013437
+8c:\questasim64_10.4e\Verificacion\MIPS\A.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\A.sv
+L0 1
+Z4 OL;L;10.4e;61
+r1
+!s85 0
+31
+!s108 1586830235.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\A.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\A.sv|
+!i113 0
+Z5 o-nologo -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@a
+valuSrc_mux
+R1
+!s110 1585788884
+!i10b 1
+!s100 TVINe>jUmab7XL_gQgD_C2
+I@L^3HUkEgSSF:5<6n<CLz1
+R2
+Z6 !s105 aluSrcB_mux_sv_unit
+S1
+R3
+w1585788883
+Z7 8c:\questasim64_10.4e\Verificacion\MIPS\aluSrcB_mux.sv
+Z8 Fc:\questasim64_10.4e\Verificacion\MIPS\aluSrcB_mux.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1585788883.000000
+Z9 !s107 c:\questasim64_10.4e\Verificacion\MIPS\aluSrcB_mux.sv|
+Z10 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\aluSrcB_mux.sv|
+!i113 0
+R5
+nalu@src_mux
+valuSrcA_mux
+R1
+Z11 !s110 1587091090
+!i10b 1
+!s100 P2?R2>=;MVn6EPGiE<DG?0
+ITAZ0>eP?8^:e4_ce]a]W03
+R2
+!s105 aluSrcA_mux20_sv_unit
+S1
+R3
+w1585966197
+8c:\questasim64_10.4e\Verificacion\MIPS\aluSrcA_mux .sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\aluSrcA_mux .sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z12 !s108 1587091090.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\aluSrcA_mux .sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\aluSrcA_mux .sv|
+!i113 0
+R5
+nalu@src@a_mux
+valuSrcB_mux
+R1
+R11
+!i10b 1
+!s100 1LlQPbV2zaQ=EWkDMLGM70
+IB_o@3`JbnI6114TS0H9L13
+R2
+R6
+S1
+R3
+w1585855995
+R7
+R8
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+R9
+R10
+!i113 0
+R5
+nalu@src@b_mux
+4Array
+R1
+Z13 !s110 1585546283
+!i10b 1
+!s100 S^icLd2]WGLoESNR9:;K00
+IGjIXXLOC]FP:ZXZJDJef82
+R2
+!s105 Array_sv_unit
+S1
+dc:/questasim64_10.4e/Verificacion/Array
+w1585532775
+8c:\questasim64_10.4e\Verificacion\Array\Array.sv
+Fc:\questasim64_10.4e\Verificacion\Array\Array.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1585546282.000000
+!s107 c:\questasim64_10.4e\Verificacion\Array\Array.sv|
+!s90 -nologo|-work|C:\questasim64_10.4e\Verificacion\MIPS\work|c:\questasim64_10.4e\Verificacion\Array\Array.sv|
+!i113 0
+Z14 o-nologo -work {C:\questasim64_10.4e\Verificacion\MIPS\work} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@array
+vB
+R1
+!s110 1586373915
+!i10b 1
+!s100 41ajVel16jS;FPHd5R;`P1
+IP2Z3E^ORLU]8BLXKk;kgb0
+R2
+!s105 B_sv_unit
+S1
+R3
+w1586013439
+8c:\questasim64_10.4e\Verificacion\MIPS\B.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\B.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z15 !s108 1586373915.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\B.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\B.sv|
+!i113 0
+R5
+n@b
+vbi_dir
+Z16 !s110 1585546284
+!i10b 1
+!s100 cfRRBz@kUdVLF27U>GLnF2
+IAkXODaWz=c>jUC=jnZ>]X3
+R2
+dc:/questasim64_10.4e/Verificacion/bi_dir
+w1580572123
+8c:\questasim64_10.4e\Verificacion\bi_dir\Bi_Dir.v
+Fc:\questasim64_10.4e\Verificacion\bi_dir\Bi_Dir.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z17 !s108 1585546283.000000
+!s107 c:\questasim64_10.4e\Verificacion\bi_dir\Bi_Dir.v|
+!s90 -nologo|-work|C:\questasim64_10.4e\Verificacion\MIPS\work|c:\questasim64_10.4e\Verificacion\bi_dir\Bi_Dir.v|
+!i113 0
+R14
+vdeco
+R16
+!i10b 1
+!s100 :44<BjUm?I<PN_ILdR9Nm1
+I^jkC[bJe9SK2na[TQ[Fla0
+R2
+Z18 dc:/questasim64_10.4e/Verificacion/watch_dog
+w1582994374
+8c:\questasim64_10.4e\Verificacion\watch_dog\deco.v
+Fc:\questasim64_10.4e\Verificacion\watch_dog\deco.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z19 !s108 1585546284.000000
+!s107 c:\questasim64_10.4e\Verificacion\watch_dog\deco.v|
+!s90 -nologo|-work|C:\questasim64_10.4e\Verificacion\MIPS\work|c:\questasim64_10.4e\Verificacion\watch_dog\deco.v|
+!i113 0
+R14
+vF_Adder
+Z20 !s110 1585546288
+!i10b 1
+!s100 n?=6Tf=BXF02__Z6>mo:70
+I_bk>DHN7XFE0<6YPlkLID1
+R2
+dc:/questasim64_10.4e/Verificacion/F_Adder
+w1579564842
+8c:\questasim64_10.4e\Verificacion\F_Adder\F_Adder.v
+Fc:\questasim64_10.4e\Verificacion\F_Adder\F_Adder.v
+L0 1
+R4
+r1
+!s85 0
+31
+R17
+!s107 c:\questasim64_10.4e\Verificacion\F_Adder\F_Adder.v|
+!s90 -nologo|-work|C:\questasim64_10.4e\Verificacion\MIPS\work|c:\questasim64_10.4e\Verificacion\F_Adder\F_Adder.v|
+!i113 0
+R14
+n@f_@adder
+vflanc_det
+R13
+!i10b 1
+!s100 `]ZaE8B02;o:Kb@Cbg]B@2
+IGW3I3U3VQ;^QV@A3Uizco0
+R2
+dc:/questasim64_10.4e/Verificacion/flanc_det
+w1582411519
+8c:\questasim64_10.4e\Verificacion\flanc_det\flanc_det.v
+Fc:\questasim64_10.4e\Verificacion\flanc_det\flanc_det.v
+L0 1
+R4
+r1
+!s85 0
+31
+R17
+!s107 c:\questasim64_10.4e\Verificacion\flanc_det\flanc_det.v|
+!s90 -nologo|-work|C:\questasim64_10.4e\Verificacion\MIPS\work|c:\questasim64_10.4e\Verificacion\flanc_det\flanc_det.v|
+!i113 0
+R14
+vfms
+R1
+!s110 1587090318
+!i10b 1
+!s100 ClCL9mRKXJTNm[Z@[d]8e1
+I85k`gQJQmaC8[Yl30YWUF0
+R2
+!s105 fsm_sv_unit
+S1
+R3
+w1587090318
+8c:\questasim64_10.4e\Verificacion\MIPS\fsm.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\fsm.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1587090318.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\fsm.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\fsm.sv|
+!i113 0
+R5
+vFSM
+Z21 !s110 1585546285
+!i10b 1
+!s100 9IS@Y;L52J8K`[mh7jG3A3
+IT<kJ29]m48aCbZf]99VSX0
+R2
+R18
+w1583108896
+8c:\questasim64_10.4e\Verificacion\watch_dog\FSM.v
+Fc:\questasim64_10.4e\Verificacion\watch_dog\FSM.v
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 c:\questasim64_10.4e\Verificacion\watch_dog\FSM.v|
+!s90 -nologo|-work|C:\questasim64_10.4e\Verificacion\MIPS\work|c:\questasim64_10.4e\Verificacion\watch_dog\FSM.v|
+!i113 0
+R14
+n@f@s@m
+vinstrucctionReg
+R1
+!s110 1586020779
+!i10b 1
+!s100 z=imPA_F23EaB3R2dY^TH1
+IYQ=gW=DcLgb;;O9=J:9^A3
+R2
+!s105 instrucctionReg_sv_unit
+S1
+R3
+w1586020779
+8c:\questasim64_10.4e\Verificacion\MIPS\instrucctionReg.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\instrucctionReg.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1586020779.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\instrucctionReg.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\instrucctionReg.sv|
+!i113 0
+R5
+ninstrucction@reg
+vinstructionReg
+R1
+!s110 1587177508
+!i10b 1
+!s100 bA;:3VJg1Q9MdO;2da]MY1
+ILzZ5lJR^W:_cQaA>3RLfL0
+R2
+!s105 instructionReg_sv_unit
+S1
+R3
+w1586025632
+8c:\questasim64_10.4e\Verificacion\MIPS\instructionReg.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\instructionReg.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1587177508.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\instructionReg.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\instructionReg.sv|
+!i113 0
+R5
+ninstruction@reg
+vIorD_mux
+R1
+!s110 1587182237
+!i10b 1
+!s100 hQo;lJWl[ODK3GZ>l`U:a3
+IBhG6;J1he7]K]Vz8^iXUU2
+R2
+!s105 IorD_mux20_sv_unit
+S1
+R3
+w1586013451
+8c:\questasim64_10.4e\Verificacion\MIPS\IorD_mux .sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\IorD_mux .sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1587182237.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\IorD_mux .sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\IorD_mux .sv|
+!i113 0
+R5
+n@ior@d_mux
+vmemory
+R1
+!s110 1586830237
+!i10b 1
+!s100 cN2QjYTN;TcAA0CzkD00i0
+Id4`NzSXLIYUi5jVO<OGLa1
+R2
+!s105 memory_sv_unit
+S1
+R3
+w1586013452
+8c:\questasim64_10.4e\Verificacion\MIPS\memory.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\memory.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z22 !s108 1586830236.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\memory.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\memory.sv|
+!i113 0
+R5
+vmemoryRegister
+R1
+Z23 !s110 1586830238
+!i10b 1
+!s100 VmW1nd7zG=o`Lm]Nl1_jR1
+If:<=L9S9[iFOR_KjAlEnP1
+R2
+!s105 memoryRegister_sv_unit
+S1
+R3
+w1586013453
+8c:\questasim64_10.4e\Verificacion\MIPS\memoryRegister.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\memoryRegister.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R22
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\memoryRegister.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\memoryRegister.sv|
+!i113 0
+R5
+nmemory@register
+vmemReg_mux
+R1
+Z24 !s110 1586830236
+!i10b 1
+!s100 M<O0ROozcDUTkig9FOmQ=1
+IhDHZ5H06LQcjGmTL=MkkM0
+R2
+!s105 memReg_mux_sv_unit
+S1
+R3
+w1585966190
+8c:\questasim64_10.4e\Verificacion\MIPS\memReg_mux.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\memReg_mux.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R22
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\memReg_mux.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\memReg_mux.sv|
+!i113 0
+R5
+nmem@reg_mux
+vmul1b
+R1
+R21
+!i10b 1
+!s100 X=zUPCgVej^D:LjDI:LaT2
+Ie^9U_2?YONac80[63lo`93
+R2
+!s105 mul1b_sv_unit
+S1
+dc:/questasim64_10.4e/Verificacion/ALU
+w1584129053
+8c:\questasim64_10.4e\Verificacion\ALU\mul1b.sv
+Fc:\questasim64_10.4e\Verificacion\ALU\mul1b.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R17
+!s107 c:\questasim64_10.4e\Verificacion\ALU\mul1b.sv|
+!s90 -nologo|-work|C:\questasim64_10.4e\Verificacion\MIPS\work|c:\questasim64_10.4e\Verificacion\ALU\mul1b.sv|
+!i113 0
+R14
+vPC
+R1
+!s110 1587089685
+!i10b 1
+!s100 O3cNo<>Vedz8C<0o7cQ]?2
+IP]nUZK[l8@AY[b1SXc_NS0
+R2
+!s105 PC_sv_unit
+S1
+R3
+w1587089685
+8c:\questasim64_10.4e\Verificacion\MIPS\PC.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\PC.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1587089685.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\PC.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\PC.sv|
+!i113 0
+R5
+n@p@c
+vPCSrc_mux
+R1
+!s110 1587089666
+!i10b 1
+!s100 TkMH`>ml1m?YCFPlZRKn[2
+IK;AVeSf7Q0ST]cUKWHiPJ2
+R2
+!s105 PCSrc_mux_sv_unit
+S1
+R3
+w1586013455
+8c:\questasim64_10.4e\Verificacion\MIPS\PCSrc_mux.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\PCSrc_mux.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z25 !s108 1587089665.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\PCSrc_mux.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\PCSrc_mux.sv|
+!i113 0
+R5
+n@p@c@src_mux
+4prog_testbench
+R1
+R21
+!i10b 1
+!s100 2IAUg]=[]mE8bOiO`Hcom1
+I40`0cU`_V1KFkVUVWRUdJ0
+R2
+!s105 prog_testbench_sv_unit
+S1
+dc:/questasim64_10.4e/Verificacion/Register_file
+w1584985312
+8c:\questasim64_10.4e\Verificacion\Register_file\prog_testbench.sv
+Fc:\questasim64_10.4e\Verificacion\Register_file\prog_testbench.sv
+L0 3
+R4
+r1
+!s85 0
+31
+Z26 !s108 1585546285.000000
+!s107 c:\questasim64_10.4e\Verificacion\Register_file\prog_testbench.sv|
+!s90 -nologo|-work|C:\questasim64_10.4e\Verificacion\MIPS\work|c:\questasim64_10.4e\Verificacion\Register_file\prog_testbench.sv|
+!i113 0
+R14
+vreg_pi
+Z27 !s110 1585546287
+!i10b 1
+!s100 F:Oac@0<`?aPE8EKj=ICW2
+IZlRPMS6_W>3C@_HgfZH5m1
+R2
+Z28 dc:/questasim64_10.4e/Verificacion/u_reg
+w1581808486
+8c:\questasim64_10.4e\Verificacion\u_reg\reg_pi.v
+Fc:\questasim64_10.4e\Verificacion\u_reg\reg_pi.v
+L0 1
+R4
+r1
+!s85 0
+31
+R26
+!s107 c:\questasim64_10.4e\Verificacion\u_reg\reg_pi.v|
+!s90 -nologo|-work|C:\questasim64_10.4e\Verificacion\MIPS\work|c:\questasim64_10.4e\Verificacion\u_reg\reg_pi.v|
+!i113 0
+R14
+vregDst_mux
+R1
+R23
+!i10b 1
+!s100 0]<9^WnhZiK1K44GGPLGd2
+IOn<;lnGhGliS9nXlSC7i?0
+R2
+!s105 regDst_mux_sv_unit
+S1
+R3
+w1586013456
+8c:\questasim64_10.4e\Verificacion\MIPS\regDst_mux.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\regDst_mux.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R22
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\regDst_mux.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\regDst_mux.sv|
+!i113 0
+R5
+nreg@dst_mux
+vregister_file
+R1
+!s110 1585787924
+!i10b 1
+!s100 @E^A;4=G:bb@@@8k;>1^O0
+I8@Zn41z6[OY9106`YENR00
+R2
+Z29 !s105 registers_sv_unit
+S1
+R3
+w1585787923
+Z30 8c:\questasim64_10.4e\Verificacion\MIPS\registers.sv
+Z31 Fc:\questasim64_10.4e\Verificacion\MIPS\registers.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1585787923.000000
+Z32 !s107 c:\questasim64_10.4e\Verificacion\MIPS\registers.sv|
+Z33 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\registers.sv|
+!i113 0
+R5
+vregisters
+R1
+R24
+!i10b 1
+!s100 [8N4mYJXH2;d0a]F1o:0E2
+ICei=B<RO88<[<6TgYlPa<3
+R2
+R29
+S1
+R3
+w1586307051
+R30
+R31
+L0 1
+R4
+r1
+!s85 0
+31
+R22
+R32
+R33
+!i113 0
+R5
+vshiftL
+R1
+!s110 1587089668
+!i10b 1
+!s100 iAd4k6]MO0oI[e1l[]3cc1
+IHMR_M>?k7g@EeVjk2NioV2
+R2
+!s105 shiftL_sv_unit
+S1
+R3
+w1586013458
+8c:\questasim64_10.4e\Verificacion\MIPS\shiftL.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\shiftL.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R25
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\shiftL.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\shiftL.sv|
+!i113 0
+R5
+nshift@l
+vshiftL2
+R1
+!s110 1586373916
+!i10b 1
+!s100 lzKnZ5z?HiM94[dWL^edM1
+I^81490=KXoKSXg^:Xmicf1
+R2
+!s105 shiftL2_sv_unit
+S1
+R3
+w1585966203
+8c:\questasim64_10.4e\Verificacion\MIPS\shiftL2.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\shiftL2.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R15
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\shiftL2.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\shiftL2.sv|
+!i113 0
+R5
+nshift@l2
+vsignExtend
+R1
+!s110 1586830239
+!i10b 1
+!s100 TS^EQgE[494UbzI`AC;ki3
+IjUZ8aQg6T_Nj0fB4kH2lL0
+R2
+!s105 signExtend_sv_unit
+S1
+R3
+w1586025400
+8c:\questasim64_10.4e\Verificacion\MIPS\signExtend.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\signExtend.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R22
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\signExtend.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\signExtend.sv|
+!i113 0
+R5
+nsign@extend
+vsum10_mq
+R16
+!i10b 1
+!s100 WNAhkfi543d9N27Q5]7eJ1
+I1F5M1zE`WVHd9bXb]R3960
+R2
+dc:/questasim64_10.4e/Verificacion/sum10_mq
+w1582741468
+8c:\questasim64_10.4e\Verificacion\sum10_mq\sum10_mq.v
+Fc:\questasim64_10.4e\Verificacion\sum10_mq\sum10_mq.v
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 c:\questasim64_10.4e\Verificacion\sum10_mq\sum10_mq.v|
+!s90 -nologo|-work|C:\questasim64_10.4e\Verificacion\MIPS\work|c:\questasim64_10.4e\Verificacion\sum10_mq\sum10_mq.v|
+!i113 0
+R14
+4tb
+R1
+!s110 1586021408
+!i10b 1
+!s100 VikdkR7S<;?d9=IG0:hB22
+I4F]`j:HmC2^[Yn?XMIFPG3
+R2
+!s105 tb_sv_unit
+S1
+R3
+w1586021407
+8c:\questasim64_10.4e\Verificacion\MIPS\tb.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\tb.sv
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1586021407.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\tb.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\tb.sv|
+!i113 0
+R5
+4tb_reg
+R1
+!s110 1587090007
+!i10b 1
+!s100 JXMKeK`WzFYmP:Ofeoa^M2
+IjSi5OoQ]N8YOb4C?me4NN3
+R2
+!s105 tb_reg_sv_unit
+S1
+R3
+w1587090007
+8c:\questasim64_10.4e\Verificacion\MIPS\tb_reg.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\tb_reg.sv
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1587090007.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\tb_reg.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\tb_reg.sv|
+!i113 0
+R5
+4test
+R1
+R20
+!i10b 1
+!s100 ^D8ShJb7^GNBJhmVH:E9d2
+IF2Bd[g<?z2CeFi9S^dOQ]2
+R2
+!s105 test_sv_unit
+S1
+dc:/questasim64_10.4e/Verificacion/Test_program
+w1582997563
+8c:\questasim64_10.4e\Verificacion\Test_program\test.sv
+Fc:\questasim64_10.4e\Verificacion\Test_program\test.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 c:\questasim64_10.4e\Verificacion\Test_program\test.sv|
+!s90 -nologo|-work|C:\questasim64_10.4e\Verificacion\MIPS\work|c:\questasim64_10.4e\Verificacion\Test_program\test.sv|
+!i113 0
+R14
+vtest_bench
+R1
+!s110 1585546289
+!i10b 1
+!s100 1AX[n2d219EW0gYIz<[V:2
+Ic=]kiDIf888f?co1i=49M3
+R2
+!s105 test_bench_sv_unit
+S1
+R18
+w1585532628
+8c:\questasim64_10.4e\Verificacion\watch_dog\test_bench.sv
+Fc:\questasim64_10.4e\Verificacion\watch_dog\test_bench.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 c:\questasim64_10.4e\Verificacion\watch_dog\test_bench.sv|
+!s90 -nologo|-work|C:\questasim64_10.4e\Verificacion\MIPS\work|c:\questasim64_10.4e\Verificacion\watch_dog\test_bench.sv|
+!i113 0
+R14
+vtest_ureg
+R27
+!i10b 1
+!s100 T36J77EPZYDWS=_VmVC=z0
+Ile[Go8z5idP<hiC]2:T]<2
+R2
+R28
+w1582226141
+8c:\questasim64_10.4e\Verificacion\u_reg\test_ureg.v
+Fc:\questasim64_10.4e\Verificacion\u_reg\test_ureg.v
+L0 2
+R4
+r1
+!s85 0
+31
+R26
+!s107 c:\questasim64_10.4e\Verificacion\u_reg\test_ureg.v|
+!s90 -nologo|-work|C:\questasim64_10.4e\Verificacion\MIPS\work|c:\questasim64_10.4e\Verificacion\u_reg\test_ureg.v|
+!i113 0
+R14
+vtop_module
+R1
+!s110 1587089667
+!i10b 1
+!s100 cX47>^K1LH=Fd:Ce]KOX_0
+IXf]JAeQzNX=V9>3HLim<a3
+R2
+!s105 top_module_sv_unit
+S1
+R3
+w1586025635
+8c:\questasim64_10.4e\Verificacion\MIPS\top_module.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\top_module.sv
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1587089666.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\top_module.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\top_module.sv|
+!i113 0
+R5
+vwatch_dogTimer
+R21
+!i10b 1
+!s100 h4zij;=@>Lel;07E0gjH:3
+II`Wee0Sc;13XVUHb1lcOj1
+R2
+R18
+w1583625165
+8c:\questasim64_10.4e\Verificacion\watch_dog\watch_dogTimer.v
+Fc:\questasim64_10.4e\Verificacion\watch_dog\watch_dogTimer.v
+L0 1
+R4
+r1
+!s85 0
+31
+R26
+!s107 c:\questasim64_10.4e\Verificacion\watch_dog\watch_dogTimer.v|
+!s90 -nologo|-work|C:\questasim64_10.4e\Verificacion\MIPS\work|c:\questasim64_10.4e\Verificacion\watch_dog\watch_dogTimer.v|
+!i113 0
+R14
+nwatch_dog@timer
