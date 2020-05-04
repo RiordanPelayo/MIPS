@@ -1,6 +1,6 @@
-# vsim -c -do "run -all;q -f" top_module 
-# Start time: 11:49:33 on Apr 04,2020
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# vsim -c -do "run -all; q -f" top_module 
+# Start time: 09:14:31 on May 02,2020
+# ** Note: (vsim-3812) Design is being optimized...
 # 
 # //  Questa Sim-64
 # //  Version 10.4e win64 Apr  9 2016
@@ -19,14 +19,13 @@
 # //
 # Loading sv_std.std
 # Loading work.top_module(fast)
-# Loading work.tb_reg(fast)
+# Loading work.fsm_tb(fast)
 # run -all
-# +-------------------+
-# | Start simulation! |
-# +-------------------+
-# >> Write verification
-# Inmediate: xxxx
-# Inmediate: ff00
-# Inmediate: ff00
-# End time: 11:49:37 on Apr 04,2020, Elapsed time: 0:00:04
+# +------------------+
+# | Start Simulation |
+# +------------------+
+# 
+# >> IorD: x, MemRead: x, MemWrite: x, IRWrite: x -->                    0
+# >> IorD: 0, MemRead: 1, MemWrite: x, IRWrite: 1 -->                20000
+# End time: 09:14:34 on May 02,2020, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0

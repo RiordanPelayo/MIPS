@@ -21,14 +21,14 @@ module ALU(
     wire [31:0] C_arithmetic, //32-bit number C for arithmetic purposes 
                 C_logic;      //32-bit number C for logic purposes 
 
-    localparam NOTA = 4'b0000,  //OPCODE for NOT(A)
-               NOTB = 4'b0001,  //OPCODE for NOT(B)
-               AND = 4'b0010,   //OPCODE for A AND B
-               OR = 4'b0011,    //OPCODE for A OR B
-               XOR = 4'b0100,   //OPCODE for A XOR B
-               NAND = 4'b0101,  //OPCODE for A NAND B
-               NOR = 4'b0110,   //OPCODE for A NOR B
-               XNOR = 4'b0111,  //OPCODE for A XNOR B
+    localparam NOTA  = 4'b0000, //OPCODE for NOT(A)
+               NOTB  = 4'b0001, //OPCODE for NOT(B)
+               AND   = 4'b0010, //OPCODE for A AND B
+               OR    = 4'b0011, //OPCODE for A OR B
+               XOR   = 4'b0100, //OPCODE for A XOR B
+               NAND  = 4'b0101, //OPCODE for A NAND B
+               NOR   = 4'b0110, //OPCODE for A NOR B
+               XNOR  = 4'b0111, //OPCODE for A XNOR B
                ADDPP = 4'b1000, //Both numbers are positive (A+B)
                ADDPN = 4'b1001, //Number A is positive and number B is negative (A-B)
                ADDNP = 4'b1010, //Number A is negative and number B is positive (-A+B)
