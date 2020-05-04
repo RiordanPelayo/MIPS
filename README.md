@@ -1,5 +1,5 @@
 # MIPS
-## Introdution
+## Introduction
 
 Because  memory  was  expensive  in  old  days,  designer  of  instruction  enhanced  complication  of  instruction  to  reduce  program   length.   Tendency   of   complication   instruction   design  brought  up  one  traditional  instruction  design  style,  which is named “Complex Instruction Set Computer-CISC” structure.  But  great  disparity  among  instructions  and  low  universal  property  result  in  instruction  realization  difficulty  and long running-time cost. Comparing to CISC, RISC CPU have  more  advantages,  such  as  faster  speed,  simplified  structure easier implementation. RISC CPU is extensive use in embedded system. Developing CPU with RISC structure is necessary choice.
 
