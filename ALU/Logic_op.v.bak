@@ -1,0 +1,56 @@
+module Logic_op(
+    input reg [31:0] A,     //32-bit number A (unsigned, input)
+                     B,     //32-bit number B (unsigned, input)
+    input reg [2:0] log_op, //Control input, to choose which logic operation will be performed
+    input wire start,       //Start logic operation flag
+    output reg finish,      //Finish logic operation flag
+    output reg [31:0] C     //32-bit number C (unsigned, output)
+);
+
+    reg finish_logic = 1'b0;   //Finish logic operation flag wire
+    reg [31:0] Z_logic;        //Variable that will store the logic result
+
+    localparam NOTA = 3'b000, //OPCODE for NOT(A)
+               NOTB = 3'b001, //OPCODE for NOT(B)
+               AND = 3'b010,  //OPCODE for A AND B
+               OR = 3'b011,   //OPCODE for A OR B
+               XOR = 3'b100,  //OPCODE for A XOR B
+               NAND = 3'b101, //OPCODE for A NAND B
+               NOR = 3'b110,  //OPCODE for A NOR B
+               XNOR = 3'b111; //OPCODE for A XNOR B
+
+    always@(*) begin
+        $display("start: %b", start);
+        if(start & ~finish_logic) begin
+            $display("1");
+            $display("opcode: %h", log_op);
+            $display("finish_logic: %b", finish_logic);
+            case(log_op)
+                NOTA: Z_logic = ~A;
+                NOTB: Z_logic = ~B;
+                AND:  Z_logic = A & B;
+                OR:   Z_logic = A | B;
+                XOR:  Z_logic = A ^ B;
+                NAND: Z_logic = ~(A & B);
+                NOR:  Z_logic = ~(A | B);
+                XNOR: Z_logic = ~(A ^ B);
+            endcase
+	    finish_logic = 1'b1; 
+            $display("finish_logic: %b", finish_logic);
+        end 
+        else if(~start & finish_logic) begin
+            $display("4");
+	    finish_logic = 1'b0;
+            finish = 1'b1;
+            C = Z_logic;
+        end
+        else if(start & finish_logic) begin
+            finish = 1'b0;
+	    C = 32'b0;
+        end
+        else begin
+            finish_logic = 1'b0;
+            finish = 1'b0;
+        end
+    end
+endmodule

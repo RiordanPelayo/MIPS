@@ -1,0 +1,38 @@
+D:/Users/alezs/Downloads/Tareas/ALU/Full_Adder.v {1 {vlog -work work -vopt -stats=none D:/Users/alezs/Downloads/Tareas/ALU/Full_Adder.v
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module Full_Adder
+
+Top level modules:
+	Full_Adder
+
+} {} {}} D:/Users/alezs/Downloads/Tareas/ALU/AddSub.v {1 {vlog -work work -vopt -stats=none D:/Users/alezs/Downloads/Tareas/ALU/AddSub.v
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module AddSub
+
+Top level modules:
+	AddSub
+
+} {} {}} D:/Users/alezs/Downloads/Tareas/ALU/Logic_op.v {2 {vlog -work work -vopt -stats=none D:/Users/alezs/Downloads/Tareas/ALU/Logic_op.v
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module Logic_op
+** Warning: D:/Users/alezs/Downloads/Tareas/ALU/Logic_op.v(23): (vlog-2182) 'finish_logic' might be read before written in always_comb or always @* block.
+
+
+Top level modules:
+	Logic_op
+
+} {} {}} D:/Users/alezs/Downloads/Tareas/ALU/ALU.sv {1 {vlog -work work -vopt -sv -stats=none D:/Users/alezs/Downloads/Tareas/ALU/ALU.sv
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/Users/alezs/Downloads/Tareas/ALU/Adder_FSM.v {1 {vlog -work work -vopt -stats=none D:/Users/alezs/Downloads/Tareas/ALU/Adder_FSM.v
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module Adder_FSM
+
+Top level modules:
+	Adder_FSM
+
+} {} {}}
