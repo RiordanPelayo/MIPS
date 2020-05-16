@@ -19,7 +19,7 @@ module Logic_op(
                NOR = 4'b0110,  //OPCODE for A NOR B
                XNOR = 4'b0111; //OPCODE for A XNOR B
 
-    always@(*) begin
+    always @(*) begin
         if(start & ~finish_logic) begin
 	        finish = 1'b0;
 	        C = 32'b0;

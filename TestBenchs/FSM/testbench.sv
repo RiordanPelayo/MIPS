@@ -8,20 +8,36 @@ program fsm_tb (fsm_if fsm_if_objtb);
        $display("+------------------+");
        $display("| Start Simulation |");
        $display("+------------------+");
-       $display("");
+       $display("\n");
       
-       $monitor(">> ALUOp: %b, ALUSrcA: %b, ALUSrcB: %b, PCSrc: %b ", fsm_if_objtb.ALUOp, fsm_if_objtb.ALUSrcA, fsm_if_objtb.ALUSrcB, fsm_if_objtb.PCSrc);
-       $monitor(">> RegWrite: %b, MemtoReg: %b, RegDst: %b, PCWrite: %b", fsm_if_objtb.RegWrite, fsm_if_objtb.MemtoReg, fsm_if_objtb.RegDst, fsm_if_objtb.PCWrite);
-       $monitor(">> IorD: %b, MemRead: %b, MemWrite: %b, IRWrite: %b --> %t", fsm_if_objtb.IorD, fsm_if_objtb.MemRead, fsm_if_objtb.MemWrite, fsm_if_objtb.IRWrite, $realtime);
 
-      #100;
+
+       @(posedge fsm_if_objtb.clk);
+       Fetch();
+       @(posedge fsm_if_objtb.clk);
+       Decode();
+       @(posedge fsm_if_objtb.clk);    
+       R_Type();  
+       @(posedge fsm_if_objtb.clk); 
+       Fetch();
    end
 
-   initial begin
+task Fetch();
+    $display("-------------- Fetch -------------");
+    $display(">> MemRead: %b, ALUSrcA: %b, IorD: %h, IRWrite: %b ", fsm_if_objtb.MemRead, fsm_if_objtb.ALUSrcA, fsm_if_objtb.IorD, fsm_if_objtb.IRWrite);
+    $display(">> ALUSrcB: %b, ALUOp: %b, PCWrite: %h, PCSrc: %b --> %t", fsm_if_objtb.ALUSrcB, fsm_if_objtb.ALUOp, fsm_if_objtb.PCWrite, fsm_if_objtb.PCSrc, $realtime);
+endtask
 
-   end
+task Decode();
+    $display("------------- Decode -------------");
+    $display(">> ALUSrcA: %b, ALUSrcB: %b, ALUOp: %b --> %t", fsm_if_objtb.ALUSrcA, fsm_if_objtb.ALUSrcB, fsm_if_objtb.ALUOp,  $realtime);
+endtask
 
+task R_Type();
+    $display("------------- R_type -------------");
+    $display(">> RegDst: %b, RegWrite: %b, MemtoReg: %b --> %t", fsm_if_objtb.RegDst, fsm_if_objtb.RegWrite, fsm_if_objtb.MemtoReg,  $realtime);
 
+endtask
 
 endprogram
 

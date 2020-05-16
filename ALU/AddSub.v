@@ -1,20 +1,20 @@
 module AddSub(
-  input reg [31:0] A,      //32-bit number A (unsigned)
-                   B,      //32-bit number B (unsigned)
-  input reg [3:0] control, //Control input. It chooses with operation will be performed
-  input wire clock,   //Clock signal
-             reset,   //Reset signal
-             start,   //Start of an operation signal
-  output reg sign,    //Sign of the final result (0 = positive, 1 = negative)
-  output reg finish,  //Finish of an operation signal
-  output reg [31:0] C //Result of the operation
+  input  wire       clock,   //Clock signal
+                    reset,   //Reset signal
+                    start,   //Start of an operation signal
+  input  reg [31:0] A,       //32-bit number A (unsigned)
+                    B,       //32-bit number B (unsigned)
+  input  reg [3:0]  control, //Control input. It chooses with operation will be performed
+  output reg        sign,    //Sign of the final result (0 = positive, 1 = negative)
+  output reg        finish,  //Finish of an operation signal
+  output reg [31:0] C        //Result of the operation
   );
 
-  reg [32:0] As,   //Two complement variable
-             Bs;   //Two complement variable
-  wire [33:0] Cs;  //Output with the result, sign and dummy carry
-  wire finish_add; //Finish addition flag wire
-  reg carry_dummy; //Dummy carry
+  reg  [32:0] As,          //Two complement variable
+              Bs;          //Two complement variable
+  wire [33:0] Cs;          //Output with the result, sign and dummy carry
+  wire        finish_add;  //Finish addition flag wire
+  reg         carry_dummy; //Dummy carry
 
   localparam  ADDPP = 4'b1000, //Both numbers are positive (A+B)
               ADDPN = 4'b1001, //Number A is positive and number B is negative (A-B)
@@ -54,8 +54,8 @@ module AddSub(
     end
     else if(~start & finish_add) begin //Once the addition has finished, all the values 
         finish <= 1'b1;
-        C <= Cs[31:0];  //Obtaining the final result 
-        sign <= Cs[32]; //Obtaining the sign of the result
+        C      <= Cs[31:0];    //Obtaining the final result 
+        sign   <= Cs[32];      //Obtaining the sign of the result
         carry_dummy <= Cs[33]; //Obtaining the dummy carry of the result
     end
     else 

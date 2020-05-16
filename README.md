@@ -49,6 +49,23 @@ The Instruction Fetch stage is responsible for obtaining the  requested  instruc
   <img src="Images/MIPS-Fetch.png" height="250">
 </p>
 
+In the testbench for this stage were tested how work together four modules of MIPS processor: ADD, Instruction Register, Program Counter and IorD mux. Every clock cycle the Program Counter sends the address of the actual instruction and is added by 4 bytes for the next address.
+
+Log file begins
+OP: xx, Reg1: xx, Reg2: xx, Inm: xxxx -->                    0
+OP: 00, Reg1: 00, Reg2: 00, Inm: 0000 -->                60000
+OP: 3f, Reg1: 1d, Reg2: 01, Inm: 0118 -->               100000
+OP: 02, Reg1: 01, Reg2: 0a, Inm: ffd1 -->               140000
+OP: 2a, Reg1: 10, Reg2: 01, Inm: 08ff -->               180000
+OP: 00, Reg1: 08, Reg2: 18, Inm: f1aa -->               220000
+OP: 06, Reg1: 07, Reg2: 11, Inm: aa01 -->               260000
+OP: 2a, Reg1: 10, Reg2: 01, Inm: 08ba -->               300000
+OP: 02, Reg1: 01, Reg2: 0a, Inm: ffd1 -->               340000
+OP: 2a, Reg1: 10, Reg2: 01, Inm: 08ff -->               380000
+OP: 00, Reg1: 08, Reg2: 18, Inm: f1aa -->               420000
+
+
+
 
 ### Execution
 EXE  stage  executes  arithmetic.  Main  component  of  EXE  stage   is   ALU.   Arithmetic   logic   unit   and   shift-register   compose  of  ALU.  Function  of  EXE  stage  is  to  do  operation  of  instruction,  such as add and subtraction. ALU sends result to EX/MEM pipeline register before entering MEM stage. 
