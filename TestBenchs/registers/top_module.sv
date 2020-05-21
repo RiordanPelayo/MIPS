@@ -2,41 +2,48 @@
 
 module top_module();
 
-localparam DEPTH = 5, WIDTH = 32;
+localparam  WIDTH = 32;
 
-bit clk; 
+bit clk;
+bit rst; 
                      
-wire RegWrite;                
-wire [(DEPTH-1):0] RR1, RR2;  
-wire [(DEPTH-1):0] WR;        
+wire MemRead;  
+wire MemWrite;              
+wire [(WIDTH-1):0] Address;          
 wire [(WIDTH-1):0] WD;          
-wire [(WIDTH-1):0] RD1, RD2;  
+wire [(WIDTH-1):0] RD;  
 
-registers #(.WIDTH(WIDTH),.DEPTH(DEPTH)) registers(
+memory #(.WIDTH(WIDTH)) DUT(
     .clk(clk),
-    .RegWrite(RegWrite),
-    .RR1(RR1),
-    .RR2(RR2),
-    .RD1(RD1),
-    .RD2(RD2),
-    .WR(WR),
-    .WD(WD) 
+    .rst(rst),
+    .MemRead(MemRead),
+    .MemWrite(MemWrite),
+    .Address(Address),
+    .WD(WD),
+    .RD(RD)
 );
 
-prog_testbench #(.WIDTH(WIDTH),.DEPTH(DEPTH)) prog_testbench(
+prog_testbench #(.WIDTH(WIDTH)) prog_testbench(
     .clk(clk),
-    .RegWrite(RegWrite),
-    .RR1(RR1),
-    .RR2(RR2),
-    .RD1(RD1),
-    .RD2(RD2),
-    .WR(WR),
-    .WD(WD) 
+    .rst(rst),
+    .MemRead(MemRead),
+    .MemWrite(MemWrite),
+    .Address(Address),
+    .WD(WD),
+    .RD(RD)
 );
 
 
 
-always
-    #20 clk = !clk;
+always #20 clk = !clk;
+
+
+initial begin
+    rst = 1;
+    #20;
+    rst = 0;
+
+
+end
 
 endmodule

@@ -10,7 +10,7 @@ module PC  #(parameter DEPTHI = 8)
 always @(posedge clk) begin
   
    if(rst)
-      Actual = 'h00;
+      Actual = 'h0;
    else
       Actual = Next;
 

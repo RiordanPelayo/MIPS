@@ -2,8 +2,8 @@ package class_instr_pkg;
 
 typedef struct
 {
-    int mem_data[0:(1<<5)-1];   //Create data type for 
-}                               //memory data
+    int mem_data[0:(1<<32)-1];   //Create data type for 
+}                                //memory data
 memory_array_T;
 
 class write_instr;
@@ -19,7 +19,7 @@ class write_instr;
         return mem;
     endfunction : reset
 
-    function void writeData(int data, bit [4:0] add);
+    function void writeData(int data, bit [31:0] add);
         mem.mem_data[add] = data;
         return;
     endfunction : writeData
@@ -37,7 +37,7 @@ class save_instr;
     memory_array_T mem;
 
 // Methods
-    function void saveData(int data, bit [4:0] add); 
+    function void saveData(int data, bit [31:0] add); 
         mem.mem_data[add] = data;
         return;     
     endfunction : saveData

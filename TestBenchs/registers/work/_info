@@ -8,16 +8,25 @@ z2
 !i10f 100
 cModel Technology
 Z0 dc:/questasim64_10.4e/Verificacion/MIPS/TestBenchs/registers
+T_opt
+!s110 1590023737
+VESiXNF7RGi3cY7PH?oUh20
+04 10 4 work top_module fast 0
+=1-5c5f674cd7c2-5ec5d639-22f-784
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4e;61
+R0
 Xclass_instr_pkg
 Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
-!s110 1587830821
+!s110 1590098845
 !i10b 1
-!s100 @P;eFh3JCNGS]]2K]5VgG3
-IeUSF`Oo;GBZgK];IJJWKY1
-VeUSF`Oo;GBZgK];IJJWKY1
+!s100 5KiRoNXVP:co:OTjkE9T63
+I0MG2ZofgF12mQz2Ro?JY_3
+V0MG2ZofgF12mQz2Ro?JY_3
 S1
 R0
-w1587830821
+w1590021476
 8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\registers\class_pkg.sv
 Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\registers\class_pkg.sv
 L0 1
@@ -25,23 +34,46 @@ Z2 OL;L;10.4e;61
 r1
 !s85 0
 31
-!s108 1587830821.000000
+!s108 1590098845.000000
 !s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\registers\class_pkg.sv|
 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\registers\class_pkg.sv|
 !i113 0
 Z3 o-nologo -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vmemory
+R1
+!s110 1590022601
+!i10b 1
+!s100 76J@0T_0NhAdVig0?U85U0
+IN<Wz1daiM<>Th8l=9c;[H2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s105 memory_sv_unit
+S1
+dC:/questasim64_10.4e/Verificacion/MIPS/TestBenchs/registers
+w1590020450
+8memory.sv
+Fmemory.sv
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1590022601.000000
+!s107 top_module.sv|prog_testbench.sv|memory.sv|class_pkg.sv|
+!s90 class_pkg.sv|memory.sv|prog_testbench.sv|top_module.sv|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 4prog_testbench
 R1
-DXx4 work 15 class_instr_pkg 0 22 eUSF`Oo;GBZgK];IJJWKY1
-!s110 1588202963
+DXx4 work 15 class_instr_pkg 0 22 CH>XfI`Z1A=66Bzj@87C:2
+!s110 1590098844
 !i10b 1
-!s100 HkIOEYS4TW:TG:PG^oo[@1
-IWCbk2g?6Xdj>4fj@EaSZ50
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s100 kQP21Pb`DGYHmKG?>VcnY3
+IJ0G;VF_KB?4Q?7QfdJeGR2
+R4
 !s105 prog_testbench_sv_unit
 S1
 R0
-w1587830820
+w1590023733
 8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\registers\prog_testbench.sv
 Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\registers\prog_testbench.sv
 L0 1
@@ -49,22 +81,22 @@ R2
 r1
 !s85 0
 31
-!s108 1588202963.000000
+!s108 1590098844.000000
 !s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\registers\prog_testbench.sv|
 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\registers\prog_testbench.sv|
 !i113 0
 R3
 vtop_module
 R1
-!s110 1588193973
+!s110 1590098843
 !i10b 1
-!s100 fjmh<dK<4SAZQ42=0`fWM2
-IGeJein2kWYD1[51joQSWj1
+!s100 =k41KPXiPT6;AI@K_Ch:91
+IUh3IG<BgTgi@@Ad2V35MO0
 R4
 !s105 top_module_sv_unit
 S1
 R0
-w1587830758
+w1590023359
 8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\registers\top_module.sv
 Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\registers\top_module.sv
 L0 3
@@ -72,7 +104,7 @@ R2
 r1
 !s85 0
 31
-!s108 1588193973.000000
+!s108 1590098843.000000
 !s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\registers\top_module.sv|
 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\registers\top_module.sv|
 !i113 0

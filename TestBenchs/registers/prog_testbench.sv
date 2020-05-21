@@ -1,11 +1,12 @@
-program prog_testbench #(parameter WIDTH =32, DEPTH=5)
+program prog_testbench #(parameter WIDTH =32)
 (
-   input wire clk,                       //Clock signal
-   output reg RegWrite,                  //Writting Enable
-   output reg [(DEPTH-1):0] RR1, RR2,    //Read Register Addresses
-   output reg [(DEPTH-1):0] WR,          //Write Register Addresses
-   output reg [(WIDTH-1):0] WD,          //Write Data
-   input reg  [(WIDTH-1):0] RD1, RD2     //Read Data 
+   input  wire              clk,      //Clock signal
+   input  wire              rst,      //Reset Signal
+   output reg               MemRead,  //Reading Enable
+   output reg               MemWrite, //Writting Enable
+   output reg [(WIDTH-1):0] Address,  //Directioning Address
+   output reg [(WIDTH-1):0] WD,       //Write Data
+   input reg  [(WIDTH-1):0] RD        //Read Data
 );
 
 import class_instr_pkg::*;     //Import pakage class
@@ -23,12 +24,12 @@ save_obj  = new();    //Create write object
    $display("| Start simulation! |");
    $display("+-------------------+");
   
-   resetArray();
+//   resetArray();
    showArray();
    write_obj.writeData('h1111_FFFF, 'h00);
    write_obj.writeData('h1111_FFFF, 'h10);
-   writeArray();
-   showArray();
+//   writeArray();
+//   showArray();
    saving('h12);
    showSaved();
 
@@ -38,12 +39,13 @@ task resetArray();
 //import reset function from write class
 automatic memory_array_T reset_mem = write_obj.reset;   
 
-   RegWrite = 1;                           //Enable writing
+   MemWrite = 1;                           //Enable writing
+   MemRead  = 0;
 
-   for( byte i = 0; i<32; i++)             //Reset all the 
+   for( byte i = 0; i<(1<<WIDTH)-1; i++)   //Reset all the 
      begin                                 //locations in
-         WR = i;                           //memory
-         WD = reset_mem.mem_data[i];
+         Address <= i;                           //memory
+         WD <= reset_mem.mem_data[i];
          @(posedge clk);
      end    
    
@@ -54,11 +56,11 @@ task writeArray();
 //import writeMem function from write class
 automatic memory_array_T written_mem = write_obj.writeMem;
 //Read enable     
-   RegWrite = 1;                           //Enable writing
-
-   for(byte i = 0; i<32; i++)       
+   MemWrite = 1;                           //Enable writing
+   MemRead  = 0;
+   for(byte i = 0; i<(1<<WIDTH)-1; i++)       
       begin                                //Update the value
-         WR = i;                           //of all the
+         Address = i;                      //of all the
          WD = written_mem.mem_data[i];     //locations in memory
          @(posedge clk);
   
@@ -70,23 +72,25 @@ $display("====================");
 $display(" Memory Array Data  ");
 $display("====================");
     
-   RegWrite = 0;                        //Read enable 
+      MemWrite = 0;                    //Read enable
+      MemRead  = 1; 
+      WD = 'h1111_FFFF;
 
-     for( byte i = 0; i<32; i++)
+     for( byte i = 0; i<(1<<WIDTH)-1; i++)
      begin
-         RR1 = i;                       //Displays the value 
-         @(posedge clk);                //of all loactions
-         $display("0x%h - %h", i, RD1); //in memory
+         Address = i;                     //Displays the value 
+         @(posedge clk);                  //of all loactions
+         $display("0x%h - %h", i, RD);    //in memory
       end   
 
 endtask 
 
-task saving(bit [4:0] add);
-   RegWrite = 0;                        //Read enable
-
-   RR1 = add; 
+task saving(bit [31:0] add);
+      MemWrite = 0;                    //Read enable
+      MemRead  = 1; 
+   Address <= add; 
    @(posedge clk); 
-   save_obj.saveData(RD1, add);
+   save_obj.saveData(RD, add);
 endtask
 
 task showSaved();

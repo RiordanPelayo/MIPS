@@ -16,9 +16,10 @@ V?]6ee<Ez@KcD6zdizCCEE1
 o-quiet -auto_acc_if_foreign -work work
 n@_opt
 OL;O;10.4e;61
+R0
 vDecode
 Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
-!s110 1589658286
+!s110 1590028461
 !i10b 1
 !s100 @2mH>RhG180;mYQo=SKIG2
 In_6W1H]4NSe1=jE7LXo>I3
@@ -34,7 +35,7 @@ Z3 OL;L;10.4e;61
 r1
 !s85 0
 31
-!s108 1589658286.000000
+!s108 1590028461.000000
 !s107 c:\questasim64_10.4e\Verificacion\MIPS\Decode\Decode.sv|
 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\Decode\Decode.sv|
 !i113 0
@@ -42,7 +43,7 @@ Z4 o-nologo -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infa
 n@decode
 vmemReg_mux
 R1
-!s110 1589658266
+!s110 1590029343
 !i10b 1
 !s100 LaHc;zh<mTfIzRcXPDPJK0
 I1o4c8?7Eg1C@7fAjai9Wm3
@@ -58,7 +59,7 @@ R3
 r1
 !s85 0
 31
-!s108 1589658266.000000
+!s108 1590029343.000000
 !s107 c:\questasim64_10.4e\Verificacion\MIPS\Decode\memReg_mux.sv|
 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\Decode\memReg_mux.sv|
 !i113 0
@@ -66,7 +67,7 @@ R4
 nmem@reg_mux
 vregDst_mux
 R1
-!s110 1589659129
+!s110 1590020210
 !i10b 1
 !s100 OlfCjH5DH>]<AC<moU_NA0
 IB8^F4B9<hlnD^nOOPeCBh3
@@ -82,7 +83,7 @@ R3
 r1
 !s85 0
 31
-!s108 1589659129.000000
+!s108 1590020210.000000
 !s107 c:\questasim64_10.4e\Verificacion\MIPS\Decode\regDst_mux.sv|
 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\Decode\regDst_mux.sv|
 !i113 0
@@ -90,7 +91,7 @@ R4
 nreg@dst_mux
 vregisters
 R1
-!s110 1589658152
+!s110 1590029524
 !i10b 1
 !s100 9YndPQ0M[oR8Pg]lzcLaO1
 IOdo[MgfoMAbmN>Y?:o<VE0
@@ -98,7 +99,7 @@ R2
 !s105 registers_sv_unit
 S1
 R0
-w1589658151
+w1590020411
 8c:\questasim64_10.4e\Verificacion\MIPS\Decode\registers.sv
 Fc:\questasim64_10.4e\Verificacion\MIPS\Decode\registers.sv
 L0 1
@@ -106,14 +107,14 @@ R3
 r1
 !s85 0
 31
-!s108 1589658151.000000
+!s108 1590029524.000000
 !s107 c:\questasim64_10.4e\Verificacion\MIPS\Decode\registers.sv|
 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\Decode\registers.sv|
 !i113 0
 R4
 4tb_decode
 R1
-!s110 1589659809
+!s110 1590028324
 !i10b 1
 !s100 ]kdSMHec[=`TXgY8;e2NH0
 IPB^LHXdAnYXH=XY>o7PhX2
@@ -129,7 +130,7 @@ R3
 r1
 !s85 0
 31
-!s108 1589659809.000000
+!s108 1590028324.000000
 !s107 c:\questasim64_10.4e\Verificacion\MIPS\Decode\tb_decode.sv|
 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\Decode\tb_decode.sv|
 !i113 0

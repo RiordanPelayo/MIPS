@@ -17,7 +17,7 @@ reg [(WIDTH-1):0] register [0:(1<<DEPTH)-1];  //Storage
     if(rst)begin //Clean up all addresses
       for (int i=0; i<(1<<DEPTH)-1; i++)   
         register[i] = 'h0;
-      end  
+    end  
     else if(RegWrite && (WR < 33)) //Write Register
       register[WR] <= WD; 
   end
