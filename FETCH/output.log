@@ -1,7 +1,6 @@
 Log file begins
 OP: xx, Reg1: xx, Reg2: xx, Inm: xxxx -->                    0
 OP: 00, Reg1: 00, Reg2: 00, Inm: 0000 -->                60000
-OP: 3f, Reg1: 1d, Reg2: 01, Inm: 0118 -->               100000
 OP: 02, Reg1: 01, Reg2: 0a, Inm: ffd1 -->               140000
 OP: 2a, Reg1: 10, Reg2: 01, Inm: 08ff -->               180000
 OP: 00, Reg1: 08, Reg2: 18, Inm: f1aa -->               220000
@@ -10,3 +9,6 @@ OP: 2a, Reg1: 10, Reg2: 01, Inm: 08ba -->               300000
 OP: 02, Reg1: 01, Reg2: 0a, Inm: ffd1 -->               340000
 OP: 2a, Reg1: 10, Reg2: 01, Inm: 08ff -->               380000
 OP: 00, Reg1: 08, Reg2: 18, Inm: f1aa -->               420000
+OP: 06, Reg1: 07, Reg2: 11, Inm: aa01 -->               460000
+OP: 2a, Reg1: 10, Reg2: 01, Inm: 08ba -->               500000
+OP: 02, Reg1: 01, Reg2: 0a, Inm: ffd1 -->               540000

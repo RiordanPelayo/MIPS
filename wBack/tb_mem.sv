@@ -1,12 +1,12 @@
 `timescale 1ns/1ps
 
-program tb_mem #(parameter WIDTH = 32, DEPTH = 16)
+program tb_mem #(parameter WIDTH = 32, DEPTHI = 16)
 (
     input   wire               clk,      //Clock Signal
     input   wire               rst,      //Reset Signal
     output  reg                MemRead,  //Reading Enable
     output  reg                MemWrite, //Writting Enable
-    output  reg  [(DEPTH-1):0] Address,  //Directioning Address
+    output  reg  [(WIDTH-1):0] Address,  //Directioning Address
     output  reg  [(WIDTH-1):0] WD,       //Write Data
     input   reg  [(WIDTH-1):0] RD        //Read Data
 );
@@ -34,7 +34,7 @@ initial begin
 
    #20;
 
-    for (int i=0; i<DEPTH; i++) begin
+    for (int i=0; i<DEPTHI; i++) begin
         Address <= i; 
         WD <= i;
         @(posedge clk); 
@@ -44,7 +44,7 @@ initial begin
     MemWrite <= 0;
     MemRead <= 1;
 
-    for (int i=0; i<DEPTH; i++) begin
+    for (int i=0; i<DEPTHI; i++) begin
         Address <= i;
         @(posedge clk);  
         $display("Add: %h,Read Data: %h",i, RD);

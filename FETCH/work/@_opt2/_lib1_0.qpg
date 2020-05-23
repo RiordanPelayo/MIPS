@@ -1,0 +1,400 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dc:/questasim64_10.4e/Verificacion/MIPS/TestBenchs/FETCH
+T_opt
+!s110 1589601748
+V0ljTiV4[b4NHO]1jDTZF02
+Z1 04 10 4 work top_module fast 0
+=1-5c5f674cd7c2-5ebf65d4-261-3fa0
+Z2 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z3 OL;O;10.4e;61
+R0
+T_opt1
+!s110 1589390020
+VD<7GF1@Gdzca@GhzkmH7l3
+04 4 4 work ADD4 fast 0
+=1-5c5f674cd7c2-5ebc2ac4-1a2-35dc
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1590103629
+V0ZI5f5z4D9e[3ACKEak=i1
+R1
+=1-5c5f674cd7c2-5ec70e4d-e8-16fc
+R2
+n@_opt2
+R3
+vADD4
+Z4 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1590102385
+!i10b 1
+!s100 Z?Ib?T]V3h_i]ljmXY=eg2
+IlKN]_SFF5UM69INaVH3[e3
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 !s105 ADD4_sv_unit
+S1
+Z7 dc:/questasim64_10.4e/Verificacion/MIPS/Fetch
+w1590102384
+8c:\questasim64_10.4e\Verificacion\MIPS\Fetch\ADD4.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\Fetch\ADD4.sv
+L0 1
+Z8 OL;L;10.4e;61
+r1
+!s85 0
+31
+!s108 1590102384.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\Fetch\ADD4.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\Fetch\ADD4.sv|
+!i113 0
+Z9 o-nologo -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@a@d@d4
+vAdder_FSM
+!s110 1589314690
+!i10b 1
+!s100 ENl[C=7?cddlUFNj5^UFg1
+I<JoT6LRdKMz[OkZMKZNTh1
+R5
+R0
+w1589312367
+8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\Adder_FSM.v
+Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\Adder_FSM.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1589314690.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\Adder_FSM.v|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\Adder_FSM.v|
+!i113 0
+R9
+n@adder_@f@s@m
+vAddSub
+!s110 1589312599
+!i10b 1
+!s100 IMk@DNhfFIjIWUlRlk68E3
+I6PIZ7=_14U]dTUHjXc@Gn0
+R5
+R0
+w1589312598
+8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\AddSub.v
+Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\AddSub.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1589312598.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\AddSub.v|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\AddSub.v|
+!i113 0
+R9
+n@add@sub
+vALU
+R4
+!s110 1589314688
+!i10b 1
+!s100 >1E3bElaQ`1A2f3P:NfX91
+Ia3g=Pd@6D@0`GQS=TlBl90
+R5
+!s105 ALU_sv_unit
+S1
+R0
+w1589312723
+8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\ALU.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\ALU.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1589314688.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\ALU.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\ALU.sv|
+!i113 0
+R9
+n@a@l@u
+vFetch
+R4
+!s110 1590103083
+!i10b 1
+!s100 M6h2NJ1mE[0?bCG[9HB`@0
+IS[:a^Tad6U:Gg6On6ZO4g0
+R5
+Z10 !s105 Fetch_sv_unit
+S1
+R7
+w1590103083
+8c:\questasim64_10.4e\Verificacion\MIPS\Fetch\Fetch.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\Fetch\Fetch.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1590103083.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\Fetch\Fetch.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\Fetch\Fetch.sv|
+!i113 0
+R9
+n@fetch
+vfetch
+R4
+!s110 1589342580
+!i10b 1
+!s100 l8R^4oe@mkAhSf;OZGfKb2
+I6o>KWFcRCND21<oQ4[9Z72
+R5
+R10
+S1
+dC:/questasim64_10.4e/Verificacion/MIPS/TestBenchs/FETCH
+w1589341853
+8Fetch.sv
+FFetch.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1589342580.000000
+!s107 top_module.sv|PC.sv|IorD_mux.sv|instructionReg.sv|ADD4.sv|tb_fetch.sv|Fetch.sv|
+!s90 Fetch.sv|tb_fetch.sv|ADD4.sv|instructionReg.sv|IorD_mux.sv|PC.sv|top_module.sv|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vFull_Adder
+!s110 1589329843
+!i10b 1
+!s100 ]=6aCL7gYM2Ye?1eQ@mJ;1
+I02HF54_?H?SUWaXG7PEHE0
+R5
+R0
+w1589312742
+8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\Full_Adder.v
+Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\Full_Adder.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1589329843.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\Full_Adder.v|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\Full_Adder.v|
+!i113 0
+R9
+n@full_@adder
+vinstructionReg
+R4
+!s110 1590101754
+!i10b 1
+!s100 Idmf@^?U]UCO>MXJ;eaYR1
+IEj88CaFX@R]APShOg]<nA3
+R5
+!s105 instructionReg_sv_unit
+S1
+R7
+w1590101754
+8c:\questasim64_10.4e\Verificacion\MIPS\Fetch\instructionReg.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\Fetch\instructionReg.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1590101754.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\Fetch\instructionReg.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\Fetch\instructionReg.sv|
+!i113 0
+R9
+ninstruction@reg
+vIorD_mux
+R4
+!s110 1590102815
+!i10b 1
+!s100 NcAc[=nKG4<2MIg<^PAZJ2
+IhSCb]R7Km15]VCNdVkO4C0
+R5
+!s105 IorD_mux_sv_unit
+S1
+R7
+w1590102815
+8c:\questasim64_10.4e\Verificacion\MIPS\Fetch\IorD_mux.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\Fetch\IorD_mux.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1590102815.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\Fetch\IorD_mux.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\Fetch\IorD_mux.sv|
+!i113 0
+R9
+n@ior@d_mux
+vLogic_op
+!s110 1589314662
+!i10b 1
+!s100 i3mzde^><b?Ei:]D6BNZ^1
+I0P8n^0:he_fEhOX[V^l7a2
+R5
+R0
+w1589312162
+8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\Logic_op.v
+Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\Logic_op.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1589314662.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\Logic_op.v|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\Logic_op.v|
+!i113 0
+R9
+n@logic_op
+vPC
+R4
+!s110 1590102073
+!i10b 1
+!s100 9`iPAAgHXiVOMMMT39`FC2
+ITXiVIi?V^b]7e21]h984<3
+R5
+!s105 PC_sv_unit
+S1
+R7
+w1590102073
+8c:\questasim64_10.4e\Verificacion\MIPS\Fetch\PC.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\Fetch\PC.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1590102073.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\Fetch\PC.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\Fetch\PC.sv|
+!i113 0
+R9
+n@p@c
+vsum_4b
+R4
+!s110 1589329976
+!i10b 1
+!s100 <7cTKJDA39j>UU]oA]EYB1
+IYKLCMF]9<dASW[7j5jIL>0
+R5
+R6
+S1
+R0
+w1589329976
+8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\ADD4.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\ADD4.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1589329976.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\ADD4.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\ADD4.sv|
+!i113 0
+R9
+4tb_fetch
+R4
+!s110 1590103625
+!i10b 1
+!s100 9M5Gl<@KEj9@CWFi[ZY6Z3
+IfjK5;0Ro?ZUEh93m1CVZc0
+R5
+Z11 !s105 tb_fetch_sv_unit
+S1
+R7
+w1590103625
+8c:\questasim64_10.4e\Verificacion\MIPS\Fetch\tb_fetch.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\Fetch\tb_fetch.sv
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1590103625.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\Fetch\tb_fetch.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\Fetch\tb_fetch.sv|
+!i113 0
+R9
+4tb_reg
+R4
+!s110 1589340555
+!i10b 1
+!s100 ^3IK0mEQ[K17bE:adahZ]2
+I]aWo]KB72ZT@CCn?YF1ES0
+R5
+R11
+S1
+R0
+w1589340555
+8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\tb_fetch.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\tb_fetch.sv
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1589340555.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\tb_fetch.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\tb_fetch.sv|
+!i113 0
+R9
+4testbench
+R4
+!s110 1589314675
+!i10b 1
+!s100 `W`HI;l[nS3SJi^NV]I5f3
+I<U@EkfLQnkOCJ6KfSTcQe0
+R5
+!s105 tb_logic_sv_unit
+S1
+R0
+w1589312087
+8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\tb_logic.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\tb_logic.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1589314675.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\tb_logic.sv|
+!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\tb_logic.sv|
+!i113 0
+R9
+vtop_logic
+R4
+!s110 1589314657
+!i10b 1
+!s100 noEkXCGJZUG1AX_ZX9:gX0
+ImneESn4ZM3TlKhDeg^7JN0
+R5
+!s105 top_logic_sv_unit
+S1
+R0
+w1589312068
+8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\top_logic.sv
+Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\top_logic.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1589314657.000000
+!s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FETCH\top_logic.sv|
+!s90 -nologo|-wo

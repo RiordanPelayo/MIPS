@@ -1,13 +1,13 @@
-module Fetch #(parameter WIDTH =32, DEPTHI = 8)
+module Fetch #(parameter WIDTH =32, DEPTHI = 16)
 (
     input  wire                 clk,       //Clock Signal
                                 rst,       //Reset Signal
     input  wire                 IorD,      //Control of MUX
-    input  reg   [(DEPTHI-1):0] Arslt,     //ALU Result
+    input  reg   [(WIDTH-1):0]  Arslt,     //ALU Result
     output reg   [5:0]          Opcode,    //Specification of Instruction
     output reg   [4:0]          Reg1,      //Register Specifications
                                 Reg2,          
-    output reg   [15:0]         Inmediate, //Immediate Constant Value
+    output reg   [15:0]         Immediate, //Immediate Constant Value
     output reg   [(DEPTHI-1):0] sumed
 );
 
@@ -22,7 +22,7 @@ instructionReg u_instructionReg (
     .Opcode           (Opcode),
     .Reg1             (Reg1),
     .Reg2             (Reg2),
-    .Inmediate        (Inmediate)
+    .Immediate        (Immediate)
 );
 
 PC u_PC (

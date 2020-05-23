@@ -2,18 +2,18 @@
 
 module top_module();
 
-localparam WIDTH =32, DEPTHI = 8;
+localparam WIDTH =32, DEPTHI = 16;
 time t = 20;
 
 bit                  clk;       //Clock Signal
 bit                  rst;       //Reset Signal
 wire                 IorD;      //Control of MUX
 wire  [(DEPTHI-1):0] Counter;   //Program Counter Input
-wire  [(DEPTHI-1):0] Arslt;     //ALU Result
+wire  [(WIDTH-1):0]  Arslt;     //ALU Result
 wire  [5:0]          Opcode;    //Specification of Instruction
 wire  [4:0]          Reg1;      //Register Specifications
 wire  [4:0]          Reg2;      //Register Specifications    
-wire  [15:0]         Inmediate; //Immediate Constant Value
+wire  [15:0]         Immediate; //Immediate Constant Value
 wire  [(DEPTHI-1):0] sumed;
 
 Fetch DUT(
@@ -24,7 +24,7 @@ Fetch DUT(
   .Opcode(Opcode),   
   .Reg1(Reg1),     
   .Reg2(Reg2),        
-  .Inmediate(Inmediate),
+  .Immediate(Immediate),
   .sumed(sumed) 
 );
 
@@ -36,7 +36,7 @@ tb_fetch testbench(
   .Opcode(Opcode),   
   .Reg1(Reg1),     
   .Reg2(Reg2),        
-  .Inmediate(Inmediate), 
+  .Immediate(Immediate), 
   .sumed(sumed)  
 );
 

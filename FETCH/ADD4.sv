@@ -1,4 +1,4 @@
-module ADD4 #(parameter DEPTHI = 8)
+module ADD4 #(parameter DEPTHI = 16)
 (     
       input  wire                clk,
       input  wire                rst,

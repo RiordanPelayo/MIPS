@@ -1,4 +1,4 @@
-module PC  #(parameter DEPTHI = 8)
+module PC  #(parameter DEPTHI = 16)
 (  
    input  wire               clk,     //Clock Signal
    input  wire               rst,     //Reset Signal

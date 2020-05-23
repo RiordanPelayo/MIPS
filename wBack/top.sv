@@ -2,16 +2,16 @@
 
 module top();
 
-localparam WIDTH = 32, DEPTH = 16;
+localparam WIDTH = 32, DEPTHI = 16;
 time t = 20;
 
 bit                 clk;      //Clock Signal
 bit                 rst;      //Reset Signal
 wire                MemRead;  //Reading Enable
 wire                MemWrite; //Writting Enable
-wire  [(DEPTH-1):0] Address;  //Directioning Address
+wire  [(WIDTH-1):0] Address;  //Directioning Address
 wire  [(WIDTH-1):0] WD;       //Write Data
-wire  [(WIDTH-1):0] RD;        //Read Data
+wire  [(WIDTH-1):0] RD;       //Read Data
 
 
 memory DUT 
