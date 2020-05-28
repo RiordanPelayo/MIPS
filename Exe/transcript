@@ -1,12 +1,6 @@
 # vsim -c -do "run -all;q -f" top 
-# Start time: 20:17:36 on May 19,2020
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# ** Warning: c:\questasim64_10.4e\Verificacion\MIPS\Exe\exe.sv(44): (vopt-2241) Connection width does not match width of port 'ALUSrc'. The port definition is at: aluSrc_mux.sv(3).
-# 
-# ** Warning: c:\questasim64_10.4e\Verificacion\MIPS\Exe\top.sv(19): (vopt-2241) Connection width does not match width of port 'ALUSrc'. The port definition is at: c:\questasim64_10.4e\Verificacion\MIPS\Exe\exe.sv(5).
-# 
-# ** Warning: c:\questasim64_10.4e\Verificacion\MIPS\Exe\top.sv(34): (vopt-2241) Connection width does not match width of port 'ALUSrc'. The port definition is at: c:\questasim64_10.4e\Verificacion\MIPS\Exe\tb_ctrl.sv(7).
+# Start time: 20:49:29 on May 27,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # 
 # //  Questa Sim-64
 # //  Version 10.4e win64 Apr  9 2016
@@ -26,11 +20,9 @@
 # Loading sv_std.std
 # Loading work.top(fast)
 # Loading work.tb_ctl(fast)
-# ** Warning: (vsim-3015) c:/questasim64_10.4e/Verificacion/MIPS/Exe/top.sv(34): [PCDPC] - Port size (4) does not match connection size (1) for port 'ALUSrc'. The port definition is at: c:/questasim64_10.4e/Verificacion/MIPS/Exe/tb_ctrl.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /top/u_tb_ctl File: c:/questasim64_10.4e/Verificacion/MIPS/Exe/tb_ctrl.sv
 # run -all
 # +-------------------+
 # | Start simulation! |
 # +-------------------+
-# End time: 20:17:38 on May 19,2020, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 4
+# End time: 20:49:32 on May 27,2020, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

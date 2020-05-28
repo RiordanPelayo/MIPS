@@ -4,7 +4,7 @@ program tb_ctl #(parameter WIDTH =32)
 (
     input   wire              clk,        //Clock Signal
     input   wire              rst,        //Clock Signal
-    output   reg [3:0]         ALUSrc,     //Mux Control   
+    output  reg               ALUSrc,     //Mux Control   
     output  reg [3:0]         ALUOp,      //ALU Opcode            
     output  reg [15:0]        Immediate,  //[15:0] of Instruction 
     output  reg [(WIDTH-1):0] Reg1,       //Register 1 Data
@@ -35,7 +35,7 @@ initial begin
     Reg1      <= 'h0000_0003;
     Reg2      <= 'hffff_fffe;
     Immediate <= 'h0020;
-    ALUOp     <= 'h0;
+    ALUOp     <= 'hf;
     ALUSrc    <=  1;
 
     for (int i=20; i<'h2b; i++) begin

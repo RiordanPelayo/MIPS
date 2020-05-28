@@ -7,26 +7,25 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dc:/questasim64_10.4e/Verificacion/MIPS/FSM
+dc:/questasim64_10.4e/Verificacion/MIPS/FSM
 T_opt
-!s110 1588808663
-V7?W:P8MkPeEFc17daBP510
+!s110 1590630918
+VNdG2Q_^[z^dM3Q3ZoXa`[1
 04 10 4 work top_module fast 0
-=1-5c5f674cd7c2-5eb34bd5-345-3728
+=1-5c5f674cd7c2-5ecf1a06-130-1984
 o-quiet -auto_acc_if_foreign -work work
 n@_opt
 OL;O;10.4e;61
-R0
 vfms
-Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
 !s110 1588192079
 !i10b 1
 !s100 >m0PR[@F7fI1R[_OPR7aO3
 IMYnaM>PZKz6SnlMG>K:<[0
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 !s105 fsm_sv_unit
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 !s105 fsm_sv_unit
 S1
-dC:/questasim64_10.4e/Verificacion/MIPS/TestBenchs/FSM
+Z3 dC:/questasim64_10.4e/Verificacion/MIPS/TestBenchs/FSM
 w1588183275
 8fsm.sv
 Ffsm.sv
@@ -36,21 +35,21 @@ r1
 !s85 0
 31
 !s108 1588192079.000000
-!s107 top_module.sv|testbench.sv|if_fsm.sv|fsm.sv|
-!s90 fsm.sv|if_fsm.sv|testbench.sv|top_module.sv|
+Z5 !s107 top_module.sv|testbench.sv|if_fsm.sv|fsm.sv|
+Z6 !s90 fsm.sv|if_fsm.sv|testbench.sv|top_module.sv|
 !i113 0
-o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vfsm
-R1
-!s110 1590099015
+R0
+!s110 1590630561
 !i10b 1
-!s100 8od_E_faDAUNRzJ3[B0me2
-I4F2Q78DK:W3:^0PzSgG<g3
+!s100 ;4;C5H@[>DJNd=31Q23jm3
+I01?TAYN[`b7MZ>;CSmS7W1
+R1
 R2
-R3
 S1
-Z5 dc:/questasim64_10.4e/Verificacion/MIPS/TestBenchs/FSM
-w1588808317
+Z8 dc:/questasim64_10.4e/Verificacion/MIPS/TestBenchs/FSM
+w1590630561
 8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\fsm.sv
 Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\fsm.sv
 L0 1
@@ -58,59 +57,59 @@ R4
 r1
 !s85 0
 31
-!s108 1590099015.000000
+!s108 1590630561.000000
 !s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\fsm.sv|
 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\fsm.sv|
 !i113 0
-Z6 o-nologo -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 o-nologo -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Yfsm_if
-R1
-!s110 1590099016
+R0
+!s110 1590629018
 !i10b 1
-!s100 C_Td9Ekl3HhPMSzf@FP7h2
-I@B6Wb<^G15TCee:KZ5G4:0
-R2
+!s100 eDPfKPSei2T]4OOB9l0Ab0
+Ik[nS^U2W`TVmC6n;jcCI90
+R1
 !s105 if_fsm_sv_unit
 S1
-R5
-w1588630524
-8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\if_fsm.sv
-Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\if_fsm.sv
+R3
+w1590628294
+8if_fsm.sv
+Fif_fsm.sv
 L0 1
 R4
 r1
 !s85 0
 31
-!s108 1590099016.000000
-!s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\if_fsm.sv|
-!s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\if_fsm.sv|
-!i113 0
+!s108 1590629018.000000
+R5
 R6
+!i113 0
+R7
 4fsm_tb
-R1
-!s110 1590099024
+R0
+!s110 1590630914
 !i10b 1
-!s100 3;<c<fd70dV2HYh6D7gH91
-IB;I<VQ09;fmnc3Qnf0o0E1
-R2
+!s100 ll;FR9U^GLd[SOSokcB`i2
+IXn9ZgPHaB0gnP^=NDZmR40
+R1
 !s105 testbench_sv_unit
 S1
-R5
-w1588808381
-Z7 8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\testbench.sv
-Z8 Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\testbench.sv
+R8
+w1590630913
+Z10 8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\testbench.sv
+Z11 Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\testbench.sv
 L0 3
 R4
 r1
 !s85 0
 31
-!s108 1590099024.000000
-!s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\testbench.sv|
-Z9 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\testbench.sv|
+!s108 1590630913.000000
+Z12 !s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\testbench.sv|
+Z13 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\testbench.sv|
 !i113 0
-R6
+R9
 Xtestbench_sv_unit
-R1
+R0
 !s110 1588202926
 !i10b 1
 !s100 0F0Q8QzB^bXPB7z6SPf5T0
@@ -118,31 +117,31 @@ IS@T9GK3CaMJb<j5=jNRIi0
 VS@T9GK3CaMJb<j5=jNRIi0
 !i103 1
 S1
-R5
-w1588202925
-R7
 R8
+w1588202925
+R10
+R11
 L0 24
 R4
 r1
 !s85 0
 31
 !s108 1588202926.000000
-!s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\testbench.sv|
-R9
+R12
+R13
 !i113 0
-R6
+R9
 vtop_module
-R1
-!s110 1590099023
+R0
+!s110 1590630479
 !i10b 1
-!s100 9`H;9j`cz@KXZIVWZkJL?0
-IVNT^YkZ;ZjdafjoVlD58L2
-R2
+!s100 cn]@_C4LdM<CHZYck6nbC0
+IKj>iUC3M@=_JAXQNbzVOc0
+R1
 !s105 top_module_sv_unit
 S1
-R5
-w1588630563
+R8
+w1590628284
 8c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\top_module.sv
 Fc:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\top_module.sv
 L0 3
@@ -150,8 +149,8 @@ R4
 r1
 !s85 0
 31
-!s108 1590099023.000000
+!s108 1590630479.000000
 !s107 c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\top_module.sv|
 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\TestBenchs\FSM\top_module.sv|
 !i113 0
-R6
+R9

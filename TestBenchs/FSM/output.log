@@ -1,0 +1,14 @@
+RegDst: x, MemtoReg: x, ALUOp: x, ALUSrc: x, RegWrite: x -->                    0
+RegDst: 0, MemtoReg: 0, ALUOp: 0, ALUSrc: 0, RegWrite: 0 -->                20000
+RegDst: 0, MemtoReg: 1, ALUOp: f, ALUSrc: 1, RegWrite: 0 -->                60000
+RegDst: 0, MemtoReg: 1, ALUOp: f, ALUSrc: 1, RegWrite: 1 -->               140000
+RegDst: 0, MemtoReg: 0, ALUOp: 0, ALUSrc: 0, RegWrite: 0 -->               180000
+RegDst: 0, MemtoReg: 0, ALUOp: f, ALUSrc: 0, RegWrite: 0 -->               220000
+RegDst: 0, MemtoReg: 0, ALUOp: 0, ALUSrc: 0, RegWrite: 0 -->               340000
+RegDst: 0, MemtoReg: 0, ALUOp: f, ALUSrc: 0, RegWrite: 0 -->               380000
+RegDst: 0, MemtoReg: 0, ALUOp: 0, ALUSrc: 0, RegWrite: 0 -->               500000
+RegDst: 0, MemtoReg: 0, ALUOp: 0, ALUSrc: 0, RegWrite: 1 -->               620000
+RegDst: 0, MemtoReg: 0, ALUOp: 0, ALUSrc: 0, RegWrite: 0 -->               660000
+RegDst: 1, MemtoReg: 0, ALUOp: b, ALUSrc: 1, RegWrite: 0 -->               700000
+RegDst: 1, MemtoReg: 0, ALUOp: b, ALUSrc: 1, RegWrite: 1 -->               780000
+RegDst: 0, MemtoReg: 0, ALUOp: 0, ALUSrc: 0, RegWrite: 0 -->               820000

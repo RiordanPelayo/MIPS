@@ -1,14 +1,12 @@
 Log file begins
-OP: xx, Reg1: xx, Reg2: xx, Inm: xxxx -->                    0
-OP: 00, Reg1: 00, Reg2: 00, Inm: 0000 -->                60000
-OP: 02, Reg1: 01, Reg2: 0a, Inm: ffd1 -->               140000
-OP: 2a, Reg1: 10, Reg2: 01, Inm: 08ff -->               180000
-OP: 00, Reg1: 08, Reg2: 18, Inm: f1aa -->               220000
-OP: 06, Reg1: 07, Reg2: 11, Inm: aa01 -->               260000
-OP: 2a, Reg1: 10, Reg2: 01, Inm: 08ba -->               300000
-OP: 02, Reg1: 01, Reg2: 0a, Inm: ffd1 -->               340000
-OP: 2a, Reg1: 10, Reg2: 01, Inm: 08ff -->               380000
-OP: 00, Reg1: 08, Reg2: 18, Inm: f1aa -->               420000
-OP: 06, Reg1: 07, Reg2: 11, Inm: aa01 -->               460000
-OP: 2a, Reg1: 10, Reg2: 01, Inm: 08ba -->               500000
-OP: 02, Reg1: 01, Reg2: 0a, Inm: ffd1 -->               540000
+OP: xx, Reg1: xx, Reg2: xx, Imm: xxxx, jumped:xxxxxxX -->                    0
+OP: 00, Reg1: 00, Reg2: 00, Imm: 0000, jumped:0000000 -->                20000
+OP: 00, Reg1: 00, Reg2: 00, Imm: 0001, jumped:0000004 -->               100000
+OP: 00, Reg1: 00, Reg2: 00, Imm: 0002, jumped:0000008 -->               220000
+OP: 00, Reg1: 00, Reg2: 00, Imm: 0003, jumped:000000c -->               300000
+OP: 00, Reg1: 00, Reg2: 00, Imm: 0004, jumped:0000010 -->               380000
+OP: 00, Reg1: 08, Reg2: 18, Imm: f1a4, jumped:463c690 -->               460000
+OP: 06, Reg1: 07, Reg2: 11, Imm: aa05, jumped:3c6a814 -->               540000
+OP: 2a, Reg1: 10, Reg2: 01, Imm: 08b6, jumped:80422d8 -->               620000
+OP: 02, Reg1: 01, Reg2: 0a, Imm: ffd7, jumped:0abff5c -->               700000
+OP: 2a, Reg1: 10, Reg2: 01, Imm: 08bb, jumped:80422ec -->               740000

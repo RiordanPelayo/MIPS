@@ -3,7 +3,7 @@ module ALUctl (
    input  wire        rst,       //Reset Signal
    input  reg [15:0]  Immediate, //[15:0] of instruction 
    input  reg [3:0]   ALUOp,     //ALU Opcode
-   output reg [3:0]   ALU_Sel    //Selection of ALU Operation   
+   output reg [4:0]   ALU_Sel    //Selection of ALU Operation   
 );
 
 reg [5:0] Funct;                 //Second part of opcode
@@ -56,7 +56,8 @@ localparam    rtyp  = 'h0,    //R-type instructions
               stliu = 'hb,    //Set on less than Immediate Unsigned         
               andi  = 'hc,    //AND with Immediate
               ori   = 'hd,    //OR with Immediate
-              xori  = 'he;    //XOR with Immediate
+              xori  = 'he,    //XOR with Immediate
+              yesB  = 'hf;    //B yes
 
 always_ff @(posedge clk) begin
 
@@ -123,7 +124,8 @@ always_ff @(posedge clk) begin
             ALU_Sel <= slta;
 
          sltu:
-            ALU_Sel <= sltua;   
+            ALU_Sel <= sltua; 
+    
          endcase
    end   
    
@@ -146,7 +148,11 @@ always_ff @(posedge clk) begin
       ALU_Sel <= ora;
 
    xori:
-      ALU_Sel <= xora;    
+      ALU_Sel <= xora; 
+
+   yesB:
+      ALU_Sel <= 'h10;  
+    
 
    endcase        
    end   

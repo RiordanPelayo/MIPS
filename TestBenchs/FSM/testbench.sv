@@ -2,42 +2,48 @@
 
 program fsm_tb (fsm_if fsm_if_objtb);
 
+integer file;
+
    initial begin
 
-       fsm_if_objtb.OpCode = 'h00;
+       file = $fopen("output.log","w");
+
        $display("+------------------+");
        $display("| Start Simulation |");
        $display("+------------------+");
        $display("\n");
       
-
-
-       @(posedge fsm_if_objtb.clk);
-       Fetch();
-       @(posedge fsm_if_objtb.clk);
-       Decode();
-       @(posedge fsm_if_objtb.clk);    
-       R_Type();  
-       @(posedge fsm_if_objtb.clk); 
-       Fetch();
+       $fmonitor(file,"RegDst: %h, MemtoReg: %h, ALUOp: %h, ALUSrc: %h, RegWrite: %h --> %t",fsm_if_objtb.RegDst, fsm_if_objtb.MemtoReg, fsm_if_objtb.ALUOp, fsm_if_objtb.ALUSrc, fsm_if_objtb.RegWrite, $realtime);
+       
+       #100;
    end
 
-task Fetch();
-    $display("-------------- Fetch -------------");
-    $display(">> MemRead: %b, ALUSrcA: %b, IorD: %h, IRWrite: %b ", fsm_if_objtb.MemRead, fsm_if_objtb.ALUSrcA, fsm_if_objtb.IorD, fsm_if_objtb.IRWrite);
-    $display(">> ALUSrcB: %b, ALUOp: %b, PCWrite: %h, PCSrc: %b --> %t", fsm_if_objtb.ALUSrcB, fsm_if_objtb.ALUOp, fsm_if_objtb.PCWrite, fsm_if_objtb.PCSrc, $realtime);
-endtask
+   initial begin
 
-task Decode();
-    $display("------------- Decode -------------");
-    $display(">> ALUSrcA: %b, ALUSrcB: %b, ALUOp: %b --> %t", fsm_if_objtb.ALUSrcA, fsm_if_objtb.ALUSrcB, fsm_if_objtb.ALUOp,  $realtime);
-endtask
+       fsm_if_objtb.OpCode<= 'h20;
 
-task R_Type();
-    $display("------------- R_type -------------");
-    $display(">> RegDst: %b, RegWrite: %b, MemtoReg: %b --> %t", fsm_if_objtb.RegDst, fsm_if_objtb.RegWrite, fsm_if_objtb.MemtoReg,  $realtime);
+        for (int i=0; i<5; i++) 
+           @(posedge fsm_if_objtb.clk);
+   
+       fsm_if_objtb.OpCode<= 'h28;
 
-endtask
+        for (int i=0; i<5; i++) 
+           @(posedge fsm_if_objtb.clk);
+
+        fsm_if_objtb.OpCode<= 'h02;
+
+        for (int i=0; i<5; i++) 
+           @(posedge fsm_if_objtb.clk);   
+
+        fsm_if_objtb.OpCode<= 'h0b;
+
+        for (int i=0; i<7; i++) 
+           @(posedge fsm_if_objtb.clk);   
+       
+       
+   end
+
+
 
 endprogram
 

@@ -49,9 +49,6 @@ initial begin
         @(posedge clk);  
         $display("Add: %h,Read Data: %h",i, RD);
     end
-    
-    
-
 
 
 end

@@ -1,48 +1,44 @@
 module fsm 
 (
-  input wire clk,              //Clock
-  input wire rst,              //Reset
-  input reg  [5:0] OpCode,     //Operations
-  output reg [3:0] ALUOp,      //ALU Operation 
-  output reg [1:0] ALUSrcB,    //ALU Source for B
-  output reg [1:0] PCSrc,      //Source for PC mux
-  output reg ALUSrcA,          //ALU Source for A
-  output reg RegWrite,         //Register Write Enable
-  output reg MemtoReg,         //Write Data mux
-  output reg RegDst,           //Register Destination Enable
-  output reg PCWrite,          //PC Write Enable
-  output reg IorD,             //Instruction or Direction mux
-  output reg MemRead,          //Read Memory
-  output reg MemWrite,         //Write on Memory
-  output reg IRWrite           //Instruction Write
+  input  wire       clk,       //Clock
+  input  wire       rst,       //Reset
+  input  reg  [5:0] OpCode,    //Operations
+  output reg        stop,      //Signal to Stop Adder
+  output reg        RegDst,    //Register Destination Enable
+  output reg        Jump,      //Control of Jump MUX
+  output reg        Branch,    //Control of Branch MUX
+  output reg        MemRead,   //Read Memory
+  output reg        MemtoReg,  //Write Data mux
+  output reg        ALUSrc,    //ALU Source mux
+  output reg        RegWrite,  //Register Write Enable
+  output reg        MemWrite,  //Write on Memory
+  output reg  [3:0] ALUOp      //ALU Operation 
 );
 
+//************** Opcode Inputs *************************************
+localparam    rtyp  = 'h00,   //R-type instructions
+              jump  = 'h02,   //Jump Unconditional
+              beq   = 'h04,   //Branch on Equal
+              addi  = 'h08,   //Add
+              addiu = 'h09,   //Add Immediate
+              slti  = 'h0a,   //Set on less than Immediate
+              stliu = 'h0b,   //Set on less than Immediate Unsigned         
+              andi  = 'h0c,   //AND with Immediate
+              ori   = 'h0d,   //OR with Immediate
+              xori  = 'h0e,   //XOR with Immediate
+              load  = 'h20,   //Load 
+              store = 'h28;   //Storage
+//*******************************************************************                 
 
-//******************** STATES ****************************************
-localparam [3:0] fetch  = 'b0000, //Instruction Fetch
-                 decode = 'b0001, //Instruction Decode
-                 mem    = 'b0010, //Memory Address Computation
-                 memA   = 'b0011, //Memory Access
-                 wback  = 'b0100, //Write-back Step
-                 exe    = 'b0101, //Execution
-                 rcomp  = 'b0110, //R-type Completion
-                 branch = 'b0111, //Branch Completion
-                 jcomp  = 'b1000; //Jump Completion 
-//********************************************************************                 
+//******************** STATES ***************************************
+localparam [2:0] fetch  = 'b000, //Instruction Fetch
+                 decode = 'b001, //Instruction Decode
+                 exe    = 'b010, //Execution
+                 memA   = 'b011, //Memory Access
+                 wback  = 'b100; //Write-back Step
+//*******************************************************************                 
 
-//******************** OpCode ****************************************
-localparam [5:0] rtype  = 'h00, //
-                 rityp  = 'h01, //
-                 jump   = 'h02, //
-                 jal    = 'h03, //
-                 beq    = 'h04, //
-                 bne    = 'h05, //
-                 blez   = 'h06, //
-                 lw     = 'h07, //
-                 sw     = 'h08; //
-//********************************************************************   
-
-reg [3:0] PresentState, NextState;
+reg [2:0] PresentState, NextState;
 
 
 always @( posedge clk, posedge rst ) begin
@@ -57,115 +53,145 @@ always @( PresentState )begin
 
   case ( PresentState )
 
-//****************** Fetch **********************************
+//****************** Fetch *********************************
     fetch:begin             
-      MemRead <= 1;
-      ALUSrcA <= 0;
-      IorD    <= 0;
-      IRWrite <= 1;
-      ALUSrcB <= 'b01;
-      ALUOp   <= 'b00;
-      PCWrite <= 1;
-      PCSrc   <= 'b00;
+      
+      stop     <= 0;
+      Jump     <= 0;
+      Branch   <= 0;
+      RegDst   <= 0;
+      RegWrite <= 0;
+      ALUSrc   <= 0;
+      ALUOp    <= rtyp;
+      ALUSrc   <= 0;
+      MemtoReg <= 0;
+      MemRead  <= 0;
+      MemWrite <= 0;
 
       NextState <= decode;
     end
 //***********************************************************
 //****************** Decode *********************************
     decode:begin   
-      ALUSrcA <= 0;
-      ALUSrcB <= 'b11;
-      ALUOp   <= 'b00;
-      
-      if (OpCode == rtype) begin
-        NextState <= rcomp;
-      end
-      else if (OpCode == beq) begin
-        NextState <= branch;
-      end
-      else if (OpCode == jump) begin
-        NextState <= jcomp;
-      end
-      else begin
-        NextState <= mem;
-      end
+          
+          stop <= 1;
+        
+          case ( OpCode )
+
+            rtyp:begin
+              RegDst <= 1;  
+              ALUOp  <= rtyp;
+              ALUSrc <= 0;  
+            end
+
+            jump:
+              Jump <= 1;
+
+            beq:begin
+              Branch <= 1;
+              ALUOp  <= addi;
+            end
+
+            addi: begin
+              RegDst <= 1;        
+              ALUSrc <= 1;
+              ALUOp  <= addi;
+
+            end
+
+            addiu: begin
+              RegDst <= 1;       
+              ALUSrc <= 1;
+              ALUOp  <= addiu;
+            end
+
+            slti: begin
+              RegDst <= 1;       
+              ALUSrc <= 1;
+              ALUOp  <= slti;
+            end
+  
+            stliu: begin
+              RegDst <= 1;       
+              ALUSrc <= 1;
+              ALUOp  <= stliu;
+            end  
+
+            andi: begin
+              RegDst <= 1;       
+              ALUSrc <= 1;
+              ALUOp  <= andi;
+            end
+
+            ori: begin
+              RegDst <= 1;       
+              ALUSrc <= 1;
+              ALUOp  <= ori;
+            end
+
+            xori: begin
+              RegDst <= 1;       
+              ALUSrc <= 1;
+              ALUOp  <= xori;
+            end
+
+            load: begin
+              ALUSrc <= 1;
+              ALUOp  <= 'hf;
+              MemtoReg <= 1;
+            end
+
+            store: begin
+              ALUSrc <= 0;
+              ALUOp  <= 'hf; 
+            end
+
+  
+          endcase
+
+      NextState <= exe;
     
     end
-//***********************************************************
-//********************* Memory ******************************
-    mem: begin        
-      ALUSrcA <= 1;
-      ALUSrcB <= 'b10;
-      ALUOp   <= 'b00;
-
-      NextState <= memA;
-    end
-//***********************************************************
-//****************** Memory Access **************************
-    memA: begin       
-      IorD    <= 1;
-      
-   if (OpCode == lw) begin
-      MemRead <= 1;
-
-      NextState <= wback;
-   end
-      else if ( OpCode == sw ) begin
-        MemWrite <= 1;
-
-        NextState <= fetch;
-      end
- 
-    end
-//***********************************************************
-//******************** Write-Back ***************************
-    wback: begin
-      RegDst   <= 0;
-      RegWrite <= 1;
-      MemtoReg <= 1;
-
-      NextState <= fetch;
-    end
-//***********************************************************
 //********************* Execution ***************************
     exe:begin
-      ALUSrcA <= 1;
-      ALUSrcB <= 'b00;
-      ALUOp   <= 'b10;
-
-      NextState <= rcomp;
+     
+          
+      NextState <= wback;
     end
 //***********************************************************
-//******************** R-Completion *************************
-    rcomp:begin
-      RegDst   <= 1;
-      RegWrite <= 1;
-      MemtoReg <= 0;
 
-      NextState <= fetch;
+//******************** Write-Back ***************************
+    wback: begin   
+           case ( OpCode )
+
+            jump:begin
+              
+            end
+
+            beq:begin
+              
+            end
+
+            load: begin
+              MemRead  <= 1;
+              RegWrite <= 1;
+            end
+
+            store: begin
+              MemWrite = 1;
+            end
+
+            default:
+              RegWrite <= 1;
+
+          endcase
+
+          stop <= 0;
+      
+      NextState <=fetch;
     end
 //***********************************************************
-//****************** Branch-Completion **********************      
-    branch: begin
-      ALUSrcA <= 1;
-      ALUSrcB <= 'b00;
-      ALUOp   <= 'b01;
-      PCSrc   <= 'b01;
-    
-      NextState <= fetch;
-    end  
-//***********************************************************
-//******************* Jump-Completion *********************** 
-    jcomp:begin
-      PCWrite <= 1;
-      PCSrc   <= 'b10;
 
-      NextState <= fetch;
-    end
-
-    default: begin
-    end
-//***********************************************************    
   endcase    
           
 end

@@ -2,7 +2,7 @@ module exe #(parameter WIDTH =32)
 (
     input  wire              clk,        //Clock Signal
     input  wire              rst,        //Clock Signal
-    input  reg [3:0]         ALUSrc,     //Mux Control   
+    input  reg               ALUSrc,     //Mux Control   
     input  reg [3:0]         ALUOp,      //ALU Opcode            
     input  reg [15:0]        Immediate,  //[15:0] of Instruction 
     input  reg [(WIDTH-1):0] Reg1,       //Register 1 Data
@@ -11,7 +11,7 @@ module exe #(parameter WIDTH =32)
     output reg               zero        //Zero Flag Signal
 );
 
-reg [3:0]         ALU_Sel;
+reg [4:0]         ALU_Sel;
 reg [(WIDTH-1):0] sign;
 reg [(WIDTH-1):0] muxOut;
 

@@ -2,15 +2,18 @@
 
 program tb_fetch #(parameter  DEPTHI = 16, WIDTH = 32)
 (  
-   input  wire                  clk,       //Clock Signal
+    input  wire                 clk,       //Clock Signal
                                 rst,       //Reset Signal
-   output  reg                  IorD,      //Control of MUX
-   output  reg   [(WIDTH-1):0] Arslt,     //ALU Result
-   input   reg   [5:0]          Opcode,    //Specification of Instruction
-   input   reg   [4:0]          Reg1,      //Register Specifications
+    output reg                  Jump,      //Control of Jump MUX
+    output reg                  Branch,    //Control of Branch MUX
+    output reg                  Zero,      //ALU Zero Signal
+    output reg                  stop,      //Signal to Stop Adder
+    output reg   [(WIDTH-1):0]  signext,   //Sign Extend Value
+    input  reg   [5:0]          Opcode,    //Specification of Instruction
+    input  reg   [4:0]          Reg1,      //Register Specifications
                                 Reg2,          
-   input   reg   [15:0]         Immediate,  //Immediate Constant Value
-   input   reg   [(DEPTHI-1):0] sumed
+    input  reg   [15:0]         Immediate,  //Immediate Constant Value
+    input  reg   [27:0]         jumped
 );
 
 integer file;
@@ -24,31 +27,43 @@ initial begin
    $display("+-------------------+");
 
    $fdisplay(file,"Log file begins");
-   $fmonitor(file,"OP: %h, Reg1: %h, Reg2: %h, Inm: %h --> %t", Opcode, Reg1, Reg2, Immediate, $realtime);
+   $fmonitor(file,"OP: %h, Reg1: %h, Reg2: %h, Imm: %h, jumped:%h --> %t", Opcode, Reg1, Reg2, Immediate, jumped, $realtime);
   
-   #400;
 end
 
 initial begin
-
-   Arslt <= 'h8;
-   IorD  <= 1;
-   #20;
-
-   @(posedge clk);
-
-   @(posedge clk);
+  
+   signext <= 'h0000_004;
+   Jump    <= 1;
+   Branch  <= 0;
+   Zero    <= 1; 
+   stop    <= 0;
    
-   IorD  <= 0;
-
-   for (int i=0; i<12; i++) begin
-      @(posedge clk);
-   end
-   
+   #40;
 
   
+      @(posedge clk);
+      @(posedge clk);
+      @(posedge clk);
+      Jump    <= 0;
+      
+      for (int i=0; i<6; i++) begin
+         @(posedge clk);
+         @(posedge clk);
+      end
 
+   Branch  <= 1;
+   Zero    <= 1;
+
+      @(posedge clk);
+      @(posedge clk);
+      @(posedge clk);
+      @(posedge clk);
+      @(posedge clk);
  
+
+
+
 
 end
 

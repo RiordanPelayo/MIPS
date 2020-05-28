@@ -3,7 +3,7 @@ module ALU #(parameter WIDTH = 32)
     input  wire               clk,       //Clock Signal
     input  wire               rst,       //Reset Signal
     input  reg  [(WIDTH-1):0] A,B,       //ALU 32-bit Inputs                 
-    input  reg  [3:0]         ALU_Sel,   //ALU Selection
+    input  reg  [4:0]         ALU_Sel,   //ALU Selection
     output reg                Zero,      //Zero Flag
     output reg  [(WIDTH-1):0] ALU_Result //ALU 32-bit Output
 );
@@ -32,6 +32,9 @@ always_ff @(posedge clk) begin
             Zero       <=  0;
         end
         else begin
+
+        Zero = (A==B)?'h1:'h0;
+          
            case(ALU_Sel)
 
          shla: // Shift Left Immediate
@@ -80,11 +83,13 @@ always_ff @(posedge clk) begin
             ALU_Result <= (signed'(A) < signed'(B)) ? 1:0;
 
          sltua: // Set on Less than Unsigned
-            ALU_Result <= (A < B) ? 1:0;   
+            ALU_Result <= (A < B) ? 1:0; 
+
+          'h10: // Yes B    
+             ALU_Result <= B;
              
         endcase
             
-        Zero = (ALU_Result=='h0)?'h1:'h0;
 
         end 
     end

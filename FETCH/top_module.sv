@@ -7,37 +7,49 @@ time t = 20;
 
 bit                  clk;       //Clock Signal
 bit                  rst;       //Reset Signal
-wire                 IorD;      //Control of MUX
-wire  [(DEPTHI-1):0] Counter;   //Program Counter Input
-wire  [(WIDTH-1):0]  Arslt;     //ALU Result
+wire                 Jump;      //Control of Jump MUX
+wire                 Branch;    //Control of Branch MUX
+wire                 Zero;      //ALU Zero Signal
+wire                 stop;      //Signal to Stop Adder
+wire  [(WIDTH-1):0]  signext;   //Sign Extend Value
 wire  [5:0]          Opcode;    //Specification of Instruction
 wire  [4:0]          Reg1;      //Register Specifications
 wire  [4:0]          Reg2;      //Register Specifications    
 wire  [15:0]         Immediate; //Immediate Constant Value
-wire  [(DEPTHI-1):0] sumed;
+wire  [27:0]         jumped;
 
-Fetch DUT(
-  .clk(clk),    
-  .rst(rst),  
-  .IorD(IorD),    
-  .Arslt(Arslt),
-  .Opcode(Opcode),   
-  .Reg1(Reg1),     
-  .Reg2(Reg2),        
-  .Immediate(Immediate),
-  .sumed(sumed) 
+
+
+Fetch u_Fetch (
+    .clk(clk),
+    .rst(rst),
+    .Jump(Jump),
+    .Branch(Branch),
+    .Zero(Zero),
+    .stop(stop),
+    .signext(signext),   
+    .Opcode(Opcode),
+    .Reg1(Reg1),
+    .Reg2(Reg2),
+    .Immediate(Immediate),
+    .jumped(jumped)
 );
 
+
+
 tb_fetch testbench(
-  .clk(clk),    
-  .rst(rst),  
-  .IorD(IorD),    
-  .Arslt(Arslt),
-  .Opcode(Opcode),   
-  .Reg1(Reg1),     
-  .Reg2(Reg2),        
-  .Immediate(Immediate), 
-  .sumed(sumed)  
+    .clk(clk),
+    .rst(rst),
+    .Jump(Jump),
+    .Branch(Branch),
+    .Zero(Zero),
+    .stop(stop),
+    .signext(signext),   
+    .Opcode(Opcode),
+    .Reg1(Reg1),
+    .Reg2(Reg2),
+    .Immediate(Immediate),
+    .jumped(jumped)
 );
 
 
@@ -45,11 +57,10 @@ tb_fetch testbench(
 always #t clk = !clk;
 
 initial begin
-    #(t*2);
+    #(t);
     rst = 1;
-    #(t*2);
+    #(t);
     rst = 0;
-    #(t*60);
 
 end
 

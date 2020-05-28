@@ -15,18 +15,16 @@ module top_module ();
         .clk(fsm_if_obj.clk),
         .rst(fsm_if_obj.rst),
         .OpCode(fsm_if_obj.OpCode),
-        .ALUOp(fsm_if_obj.ALUOp),
-        .ALUSrcB(fsm_if_obj.ALUSrcB),
-        .ALUSrcA(fsm_if_obj.ALUSrcA),
-        .PCSrc(fsm_if_obj.PCSrc),
-        .RegWrite(fsm_if_obj.RegWrite),
-        .MemtoReg(fsm_if_obj.MemtoReg),
+        .stop(fsm_if_obj.stop),
         .RegDst(fsm_if_obj.RegDst),
-        .PCWrite(fsm_if_obj.PCWrite),
-        .IorD(fsm_if_obj.IorD),
+        .Jump(fsm_if_obj.Jump),
+        .Branch(fsm_if_obj.Branch),
         .MemRead(fsm_if_obj.MemRead),
-        .MemWrite(fsm_if_obj.MemWrite),
-        .IRWrite(fsm_if_obj.IRWrite)
+        .MemtoReg(fsm_if_obj.MemtoReg),
+        .ALUOp(fsm_if_obj.ALUOp),
+        .ALUSrc(fsm_if_obj.ALUSrc),
+        .RegWrite(fsm_if_obj.RegWrite),
+        .MemWrite(fsm_if_obj.MemWrite)
 
     );
 
@@ -37,7 +35,7 @@ module top_module ();
         rst = 1;
         #t;
         rst = 0;
-        #(20*t);
+        
     end
 
 endmodule : top_module

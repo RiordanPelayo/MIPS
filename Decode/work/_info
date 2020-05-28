@@ -114,7 +114,7 @@ r1
 R4
 4tb_decode
 R1
-!s110 1590028324
+!s110 1590443007
 !i10b 1
 !s100 ]kdSMHec[=`TXgY8;e2NH0
 IPB^LHXdAnYXH=XY>o7PhX2
@@ -130,7 +130,7 @@ R3
 r1
 !s85 0
 31
-!s108 1590028324.000000
+!s108 1590443007.000000
 !s107 c:\questasim64_10.4e\Verificacion\MIPS\Decode\tb_decode.sv|
 !s90 -nologo|-work|work|c:\questasim64_10.4e\Verificacion\MIPS\Decode\tb_decode.sv|
 !i113 0
